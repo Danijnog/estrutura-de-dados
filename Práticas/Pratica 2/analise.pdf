@@ -1,0 +1,176 @@
+    Análise das funções e algoritmos implementados entre o campo amostral de 0 a 15
+
+    Atenção: toda a análise foi gerada com base nos dados do gprof e das funções ´difTempoSistema´ e ´difTempoUsuario´ que implementei para tal finalidade.
+    Ao rodar o comando 'make', é possível verificar a análise completa tomando como valor '5' de fibonnaci recursivo e iterativo, fatorial recursivo e iterativo com base no tempo de execução de usuário e sistema 
+
+Tópicos [
+    1. Fibonacci recursivo
+    2. Fibonacci iterativo
+    3. Fatorial recursivo
+    4. Fatorial iteratito
+    5. Fatorial recursivo com atraso no tempo de execução através de uma função que implementei
+    6. Conclusões
+]
+
+                                Fibonacci
+----------------- ----------------- -----------------
+1. Vamos começar analisando a função de Fibonnaci de forma recursiva (função fibonacciRecursivo)
+
+Fibonacci (Recursivo) de 15 = 610
+
+    -fibonacciRecursivo status: 
+    -Tempo usuário (CPU): 0.0000900 seg, tempo do sistema: 0.000000000 seg
+
+    index % time    self  children    called     name
+                    0.00    0.00       2/2           main [14]
+    [1]      0.0    0.00    0.00       2         difTempoSistema [1]
+    -----------------------------------------------
+                    0.00    0.00       2/2           main [14]
+    [2]      0.0    0.00    0.00       2         difTempoUsuario [2]
+    -----------------------------------------------
+                                        1218             fibonacciRecursivo [4]
+                    0.00    0.00       1/1           main [14]
+    [3]      0.0    0.00    0.00       1+1218    fibonacciRecursivo [4]
+                                        1218             fibonacciRecursivo [4]
+    -----------------------------------------------
+                    0.00    0.00       1/1           main [14]
+    [4]      0.0    0.00    0.00       1         parse_args [5]
+    -----------------------------------------------
+
+      %   cumulative   self              self     total           
+    time   seconds   seconds    calls  Ts/call  Ts/call  name    
+    0.00      0.00     0.00        2     0.00     0.00  difTempoSistema
+    0.00      0.00     0.00        2     0.00     0.00  difTempoUsuario
+    0.00      0.00     0.00        1     0.00     0.00  fibonacciRecursivo
+    0.00      0.00     0.00        1     0.00     0.00  parse_args
+
+2. Análise de fibonacci de forma iterativa (função fibonacciIterativo)
+    
+Fibonacci (Iterativo) de 15: 610
+
+    -fibonacciIterativo status: 
+    -Tempo usuário (CPU): 0.0000020 seg, tempo do sistema: 0.000000000 seg
+
+    index % time    self  children    called     name
+                    0.00    0.00       2/2           main [14]
+    [1]      0.0    0.00    0.00       2         difTempoSistema [1]
+    -----------------------------------------------
+                    0.00    0.00       2/2           main [14]
+    [2]      0.0    0.00    0.00       2         difTempoUsuario [2]
+    -----------------------------------------------
+                    0.00    0.00       1/1           main [14]
+    [3]      0.0    0.00    0.00       1         fibonacciIterativo [3]
+    -----------------------------------------------
+                    0.00    0.00       1/1           main [14]
+    [5]      0.0    0.00    0.00       1         parse_args [5]
+    -----------------------------------------------
+
+      %   cumulative   self              self     total           
+    time   seconds   seconds    calls  Ts/call  Ts/call  name    
+    0.00      0.00     0.00        2     0.00     0.00  difTempoSistema
+    0.00      0.00     0.00        2     0.00     0.00  difTempoUsuario
+    0.00      0.00     0.00        1     0.00     0.00  fibonacciIterativo
+    0.00      0.00     0.00        1     0.00     0.00  parse_args
+
+----------------- ----------------- -----------------
+
+                                Fatorial
+----------------- ----------------- -----------------
+3. Análise de fatorial de forma recursiva (função fatorialRecursivo)
+
+    Fatorial (Recursivo) de 15: 2004310016
+
+    -fatorialRecursivo status: 
+    -Tempo usuário (CPU): 0.0000760 seg, tempo do sistema: 0.000000000 seg
+
+    index % time    self  children    called     name
+                    0.00    0.00       2/2           main [14]
+    [1]      0.0    0.00    0.00       2         difTempoSistema [1]
+    -----------------------------------------------
+                    0.00    0.00       2/2           main [14]
+    [2]      0.0    0.00    0.00       2         difTempoUsuario [2]
+    -----------------------------------------------
+                                        15             fatorialRecursivo [4]
+                    0.00    0.00       1/1           main [14]
+    [4]      0.0    0.00    0.00       1+15      fatorialRecursivo [4]
+                                        15             fatorialRecursivo [4]
+    -----------------------------------------------
+                    0.00    0.00       1/1           main [14]
+    [5]      0.0    0.00    0.00       1         parse_args [5]
+    -----------------------------------------------
+
+      %   cumulative   self              self     total           
+    time   seconds   seconds    calls  Ts/call  Ts/call  name    
+    0.00      0.00     0.00        2     0.00     0.00  difTempoSistema
+    0.00      0.00     0.00        2     0.00     0.00  difTempoUsuario
+    0.00      0.00     0.00        1     0.00     0.00  fatorialRecursivo
+    0.00      0.00     0.00        1     0.00     0.00  parse_args
+
+4. Análise de fatorial de forma iterativa (função fatorialIterativo)
+
+    Fatorial (Iterativo) de 15: 2004310016
+
+    -fatorialIterativo status: 
+    -Tempo usuário (CPU): 0.0000040 seg, tempo do sistema: 0.000000000 seg
+
+    index % time    self  children    called     name
+                    0.00    0.00       2/2           main [14]
+    [1]      0.0    0.00    0.00       2         difTempoSistema [1]
+    -----------------------------------------------
+                    0.00    0.00       2/2           main [14]
+    [2]      0.0    0.00    0.00       2         difTempoUsuario [2]
+    -----------------------------------------------
+                    0.00    0.00       1/1           main [14]
+    [3]      0.0    0.00    0.00       1         fatorialIterativo [3]
+    -----------------------------------------------
+                    0.00    0.00       1/1           main [14]
+    [5]      0.0    0.00    0.00       1         parse_args [5]
+    -----------------------------------------------
+    
+    %   cumulative   self              self     total           
+    time   seconds   seconds    calls  Ts/call  Ts/call  name    
+    0.00      0.00     0.00        2     0.00     0.00  difTempoSistema
+    0.00      0.00     0.00        2     0.00     0.00  difTempoUsuario
+    0.00      0.00     0.00        1     0.00     0.00  fatorialIterativo
+    0.00      0.00     0.00        1     0.00     0.00  parse_args
+
+5. Para o algoritmo recursivo do fatorial, irei implementar uma função (consomeTempo()) para atrasar o tempo de execução e fazer a seguinte análise:
+
+    Fatorial (Recursivo) de 15: 2004310016
+
+    -fatorialRecursivo status: 
+    -Tempo usuário (CPU): 8.4764786 seg, tempo do sistema: 0.000000000 seg
+
+    /* Esse foi o tempo gasto pela CPU para processar o programa calculado pela função difTempoUsuario() que implementei,
+    que é observável também na análise do gprof abaixo */
+
+      %   cumulative   self              self     total           
+    time   seconds   seconds    calls   s/call   s/call  name    
+    100.52    8.51     8.51       16     0.53     0.53  consomeTempo
+    0.00      8.51     0.00        2     0.00     0.00  difTempoSistema
+    0.00      8.51     0.00        2     0.00     0.00  difTempoUsuario
+    0.00      8.51     0.00        1     0.00     0.00  fatorialIterativo
+    0.00      8.51     0.00        1     0.00     8.51  fatorialRecursivo
+    0.00      8.51     0.00        1     0.00     0.00  parse_args
+
+    Vemos que o resultado dos dois são (praticamente) idênticos, que levou
+    aproximadamente 8,5 segundos para processar a função consomeTempo(), tendo sido chamada 16 vezes
+
+6. Conclusões:
+
+    é notável que a função implementada de forma recursiva consome mais memória do computador
+    e leva mais tempo para ser executada, tanto o fatorial quanto o fibonacci levaram
+    mais tempo para serem executados de forma recursiva
+
+    Até quando colocamos valores bem baixos, a função recursiva ainda sim é executada de forma mais lenta, por exemplo:
+
+    Fatorial (Recursivo) de 1: 1
+
+        -fatorialRecursivo status: 
+        -Tempo usuário (CPU): 0.0000470 seg, tempo do sistema: 0.000000000 seg
+
+    Fatorial (Iterativo) de 1: 1
+
+        -fatorialIterativo status: 
+        -Tempo usuário (CPU): 0.0000050 seg, tempo do sistema: 0.000000000 seg
+        ---------------------------
