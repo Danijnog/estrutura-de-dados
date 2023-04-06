@@ -1,0 +1,20 @@
+1) Analise o código e tente identificar eventuais erros:
+O problema é que há uma tentativa de acesso a memória inválida na ultima iteração do loop for, devido ao loop iterar 27 vezes e alocarmos 26 bytes para a variável "source"
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+Com o valgrind detectamos o problema:
+    ==16576== Invalid read of size 1
+    ==16576==    at 0x1091D2: main (c8.c:9)
+    ==16576==  Address 0x4a4c0ba is 0 bytes after a block of size 26 alloc'd
+    ==16576==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+    ==16576==    by 0x1091B1: main (c8.c:6)
+
+3) Para corrigirmos:
+    - Basta fazer a iteração no loop "for" até 26.
+
+4) Após realizar a correção, vemos que não tem mais erro de leitura de memória inválida no valgrind 
+    ==18042== HEAP SUMMARY:
+    ==18042==     in use at exit: 0 bytes in 0 blocks
+    ==18042==   total heap usage: 2 allocs, 2 frees, 53 bytes allocated
+    ==18042== 
+    ==18042== All heap blocks were freed -- no leaks are possible

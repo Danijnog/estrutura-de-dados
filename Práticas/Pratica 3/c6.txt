@@ -1,0 +1,30 @@
+1) Analise o código e tente identificar eventuais erros:
+O problema é que na função 'resizeArray', o ponteiro dPtr recebe o atributo data do array e é realocado para apontar para um novo bloco de memória, mas não atualiza o ponteiro 'data' da scruct '_List'.
+isso significa que mesmo após a realocação de memória, o ponteiro data ainda aponta para o bloco de memória mais antigo.
+
+Além disso, também é bom checarmos de o ponteiro dPtr não é nulo para sabermos se o realloc foi feito com sucesso ou não
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+Utilizando o valgrind para verificarmos o erro:
+
+    ==8791== Invalid free() / delete / delete[] / realloc()
+    ==8791==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+    ==8791==    by 0x109215: main (c6.c:21)
+    ==8791==  Address 0x4a4c090 is 0 bytes inside a block of size 40 free'd
+    ==8791==    at 0x483DFAF: realloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+    ==8791==    by 0x1091B4: resizeArray (c6.c:12)
+    ==8791==    by 0x109202: main (c6.c:19)
+    ==8791==  Block was alloc'd at
+    ==8791==    at 0x483DD99: calloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+    ==8791==    by 0x1091EC: main (c6.c:18)
+
+
+3) Para corrigir:
+    - basta fazermos a checagem se dPtr não é nulo, e depois implementar na função 'resizeArray' o ponteiro 'array->data = dPtr', para que o ponteiro data do array aponte para o novo endereço de memória de dPtr
+
+4) Depois de corrigido, checando com o valgrind se há algum vazamento de memória:
+    ==9819== HEAP SUMMARY:
+    ==9819==     in use at exit: 0 bytes in 0 blocks
+    ==9819==   total heap usage: 4 allocs, 4 frees, 1,140 bytes allocated
+    ==9819== 
+    ==9819== All heap blocks were freed -- no leaks are possible

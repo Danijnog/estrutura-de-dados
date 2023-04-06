@@ -1,0 +1,18 @@
+1) Analise o código e tente identificar eventuais erros:
+No programa, é feito uma divisão de um inteiro por 0 na função actual_calc, o que acaba dando erro no programa.
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas: utilizando o valgrind:
+    ==27372==  Integer divide by zero at address 0x1008D8207E
+    ==27372==    at 0x10913B: actual_calc (c16.c:6)
+    ==27372==    by 0x109170: calc (c16.c:15)
+    ==27372==    by 0x109189: main (c16.c:20)
+
+
+3) Para corrigir:
+    - basta tratarmos esse erro no programa para evitar a divisão por 0
+
+
+4) Depois de corrigido e tratado, checando com o valgrind:
+    ==28952== Command: ./programa
+    ==28952== 
+    Não é possível realizar divisão por 0! 

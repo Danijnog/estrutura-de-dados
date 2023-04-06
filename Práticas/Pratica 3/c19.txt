@@ -1,0 +1,26 @@
+1) Analise o código e tente identificar eventuais erros:
+O problema é devido ao ponteiro 'buf' ser declarado porém não ser inicializado, apotando para um endereço de memória desconhecido que causa uma falha no programa quando a função "sprintf" tenta escrever nesse buffer na memória.
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+Confirmamos o erro ao verificarmos que o ponteiro aponta para um endereço indefinido com o gdb:
+    Breakpoint 1, sum_to_n (num=0) at c19.c:8
+    8       {
+    (gdb) display buf
+    1: buf = 0x0
+
+    O acesso ao ponteiro pela função "sprintf" ocasiona em um erro de segmentation fault justamente por isso.
+
+
+3) Para corrigir:
+    - temos de inicializar o ponteiro estaticamente ou dinâmicamente
+
+4) Depois de corrigido, checando com o valgrind:
+    enter a number:
+    2
+    sum = 3
+    ==28583== 
+    ==28583== HEAP SUMMARY:
+    ==28583==     in use at exit: 0 bytes in 0 blocks
+    ==28583==   total heap usage: 3 allocs, 3 frees, 2,058 bytes allocated
+    ==28583== 
+    ==28583== All heap blocks were freed -- no leaks are possible

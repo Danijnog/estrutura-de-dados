@@ -1,0 +1,24 @@
+1) Analise o código e tente identificar eventuais erros:
+O problema é que declaramos um valor de 'x' e não o inicializamos antes de usarmos a variável no loop, que pode causar problemas no programa facilmente e comportamentos inesperados no código.
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+O compilador não mostra um warning para nós avisando sobre esse problema de não inicializar a variável, porém rodando com o valgrind podemos perceber:
+    ==3568== Conditional jump or move depends on uninitialised value(s)
+    ==3568==    at 0x109159: main (c12.c:6)
+    ==3568==  Uninitialised value was created by a stack allocation
+    ==3568==    at 0x109149: main (c12.c:4)
+
+    no valgrind é mostrado a linha em que começa o loop com a variável não inicializada, e também disse que foi uma alocação na pilha de memória do programa.
+
+3) Para corrigir
+    - Basta inicializar a variável x com 0
+
+4) Após a correção, rodando com valgrind, vemos que o programa agora está certo:
+    ==4860== 
+    X is zero
+    ==4860== 
+    ==4860== HEAP SUMMARY:
+    ==4860==     in use at exit: 0 bytes in 0 blocks
+    ==4860==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+    ==4860== 
+    ==4860== All heap blocks were freed -- no leaks are possible

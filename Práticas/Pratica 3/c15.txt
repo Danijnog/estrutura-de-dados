@@ -1,0 +1,94 @@
+1) Analise o código e tente identificar eventuais erros:
+No programa, dentro do loop da função main, em cada iteração a variável 'a' vai ter sempre o valor 2, pois o problema é que a cada iteração atribuimos o valor 1 a ela e chamamos a função "inc()" para somar.
+A soma não é feito adequadamente justamente por cada iteração sempre voltarmos o valor da variável 'a' para 1 dentro do loop. 
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas: utilizando o gdb:
+    8       int main(int argc, char** argv) {
+    (gdb) next
+    9         for(int i=1; i < 5; i++) {
+    (gdb) next
+    10           int a = 1;
+    (gdb) display a
+    1: a = 0
+    (gdb) next
+    11           a = inc(a);
+    1: a = 1
+    (gdb) next
+    9         for(int i=1; i < 5; i++) {
+    (gdb) next
+    10           int a = 1;
+    1: a = 2
+    (gdb) next
+    11           a = inc(a);
+    1: a = 1
+    (gdb) next
+    9         for(int i=1; i < 5; i++) {
+    (gdb) next
+    10           int a = 1;
+    1: a = 2
+    (gdb) next
+    11           a = inc(a);
+    1: a = 1
+    (gdb) next
+    9         for(int i=1; i < 5; i++) {
+    (gdb) next
+    10           int a = 1;
+    1: a = 2
+    (gdb) next
+    11           a = inc(a);
+    1: a = 1
+
+
+3) Para corrigir:
+    - basta declaramos e inicializarmos a variável 'a' fora do loop dentro da main.
+
+
+4) Depois de corrigido, checando com gdb:
+    8       int main(int argc, char** argv) {
+    (gdb) next
+    9           int a = 1;
+    (gdb) display a
+    1: a = 0
+    (gdb) next
+    10          for(int i=1; i < 5; i++) {
+    1: a = 1
+    (gdb) next
+    11              a = inc(a);
+    1: a = 1
+    (gdb) next
+    12              printf("%d \n", a);
+    1: a = 2
+    (gdb) next
+    2 
+    10          for(int i=1; i < 5; i++) {
+    1: a = 2
+    (gdb) next
+    11              a = inc(a);
+    1: a = 2
+    (gdb) next
+    12              printf("%d \n", a);
+    1: a = 3
+    (gdb) next
+    3 
+    10          for(int i=1; i < 5; i++) {
+    1: a = 3
+    (gdb) next
+    11              a = inc(a);
+    1: a = 3
+    (gdb) next
+    12              printf("%d \n", a);
+    1: a = 4
+    (gdb) next
+    4 
+    10          for(int i=1; i < 5; i++) {
+    1: a = 4
+    (gdb) next
+    11              a = inc(a);
+    1: a = 4
+    (gdb) next
+    12              printf("%d \n", a);
+    1: a = 5
+    (gdb) next
+    5 
+    10          for(int i=1; i < 5; i++) {
+    1: a = 5

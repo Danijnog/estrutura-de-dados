@@ -1,0 +1,30 @@
+1) Analise o código e tente identificar eventuais erros:
+O problema é que realizamos 3 alocações dinâmica de memória para o ponteiro p e só desalocamos a memória uma vez, que foi 12 bytes.
+Então, nosso programa ficou com vazamento de memória de 35 bytes (19 + 16)  
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+Verificamos o erro com o valgrind:
+    ==7234== HEAP SUMMARY:
+    ==7234==     in use at exit: 35 bytes in 2 blocks
+    ==7234==   total heap usage: 3 allocs, 1 frees, 47 bytes allocated
+    ==7234== 
+    ==7234== 16 bytes in 1 blocks are definitely lost in loss record 1 of 2
+    ==7234==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+    ==7234==    by 0x1091A6: main (c13.c:11)
+    ==7234== 
+    ==7234== 19 bytes in 1 blocks are definitely lost in loss record 2 of 2
+    ==7234==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+    ==7234==    by 0x10917E: main (c13.c:8)
+
+    ==7234== LEAK SUMMARY:
+    ==7234==    definitely lost: 35 bytes in 2 blocks
+
+3) Para corrigir:
+    - Basta a cada vez que fizemos um malloc, utilizarmos a função free em seguida para desalocar a memória que foi alocada dinâmicamente.
+
+4) Depois de corrigido, vemos que não há mais vazamento de memória com o valgrind:
+    ==8100== HEAP SUMMARY:
+    ==8100==     in use at exit: 0 bytes in 0 blocks
+    ==8100==   total heap usage: 3 allocs, 3 frees, 47 bytes allocated
+    ==8100== 
+    ==8100== All heap blocks were freed -- no leaks are possible

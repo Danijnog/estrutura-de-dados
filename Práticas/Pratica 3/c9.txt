@@ -1,0 +1,34 @@
+1) Analise o código e tente identificar eventuais erros:
+O problema é que estamos tentando acessar uma posição inválida da memória.
+É realizado uma alocação dinâmica no ponteiro 'x' alocando 40 bytes a ele, o que torna possível o acesso de 10 inteiros (10 * 4) = 40 bytes.
+Porém, estamos tentando acessar o décimo primeiro elemento no indice [10], o que causa o acesso a um endereço de memória invalido.
+
+Além disso, também está faltando desalocarmos a memória alocada dinâmicamente causando vazamento de memória do programa
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+Com o valgrind percebemos o erro:
+    ==28464== Invalid write of size 4
+    ==28464==    at 0x10916B: f (c9.c:5)
+    ==28464==    by 0x109180: main (c9.c:10)
+    ==28464==  Address 0x4a4c068 is 0 bytes after a block of size 40 alloc'd
+    ==28464==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+    ==28464==    by 0x10915E: f (c9.c:4)
+    ==28464==    by 0x109180: main (c9.c:10)
+
+    ==30730== HEAP SUMMARY:
+    ==30730==     in use at exit: 40 bytes in 1 blocks
+    ==30730==   total heap usage: 1 allocs, 0 frees, 40 bytes allocated
+
+    ==30730== LEAK SUMMARY:
+    ==30730==    definitely lost: 40 bytes in 1 blocks
+
+3) Para corrigir:
+    - a posição do ponteiro de x pode ir de {0 até 9}, então basta atribuirmos, por exemplo: x[9] = 0;
+    - também devemos utilizar a função "free(x)" para que não haja vazamento de memória no programa.
+
+4) Após a correção vemos que não há mais acesso a posição inválida de memória e também vazamento de memória no programa
+    ==29888== HEAP SUMMARY:
+    ==29888==     in use at exit: 0 bytes in 0 blocks
+    ==29888==   total heap usage: 1 allocs, 1 frees, 40 bytes allocated
+    ==29888== 
+    ==29888== All heap blocks were freed -- no leaks are possible

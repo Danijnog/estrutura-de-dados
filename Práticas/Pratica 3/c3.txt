@@ -1,0 +1,31 @@
+1) Analise o código e tente identificar eventuais erros:
+O problema é que a cada iteração no loop 'for' estamos realizando uma alocação dinâmica de memória para a variável 'a' e no final não estamos desalocando toda a memória que alocamos no loop, causando vazamento de memória no programa
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+Confirmamos o erro ao rodar o valgrind: 
+    ==8587== HEAP SUMMARY:
+    ==8587==     in use at exit: 3,600 bytes in 9 blocks
+    ==8587==   total heap usage: 10 allocs, 1 frees, 4,000 bytes allocated
+    ==8587== 
+    ==8587== 3,600 bytes in 9 blocks are definitely lost in loss record 1 of 1
+    ==8587==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+    ==8587==    by 0x10918E: main (c3.c:9)
+    ==8587== 
+    ==8587== LEAK SUMMARY:
+    ==8587==    definitely lost: 3,600 bytes in 9 blocks
+    ==8587==    indirectly lost: 0 bytes in 0 blocks
+    ==8587==      possibly lost: 0 bytes in 0 blocks
+    ==8587==    still reachable: 0 bytes in 0 blocks
+    ==8587==         suppressed: 0 bytes in 0 blocks
+
+    confirmamos o fato de que fizemos 10 mallocs para a variável 'a' e não desalocamos toda a memória alocada a ela 
+
+3) Para corrigirmos o código:
+    - basta inserir o comando "free(a)" dentro do loop, para que seja possível desalocar toda a memória alocada a cada iteração.
+
+4) Verificando a remoção do erro: com Valgrind
+    ==24250== HEAP SUMMARY:
+    ==24250==     in use at exit: 0 bytes in 0 blocks
+    ==24250==   total heap usage: 6 allocs, 6 frees, 112 bytes allocated
+    ==24250== 
+    ==24250== All heap blocks were freed -- no leaks are possible

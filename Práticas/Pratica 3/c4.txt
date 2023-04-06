@@ -1,0 +1,30 @@
+1) Analise o código e tente identificar eventuais erros:
+O programa está com problema de segmentation fault (que pode ser um vazamento de memória ou que estamos tentando acessar uma posição da memória inválida)
+Nesse caso específico, estamos tentando acessar uma posição de memória inválida dos atributos rows, col e data da struct Matrix antes de alocarmos uma quantidade de memória pra struct Matrix acessar, o que acaba causando o erro de memória inválida
+
+Além disso, no programa é feito um free em um ponteiro (char *text) sem ter feito um malloc no ponteiro antes, o que não faz sentido, já que não alocamos uma memória dinâmicamente ao ponteiro
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+Utilizando o gdb e definindo um breakpoint quando "rotation3D->rows = 4" podemos notar o erro
+
+    Breakpoint 1, main () at c4.c:14
+    14        rotation3D->rows=4;
+    (gdb) display rotation3D->rows
+    1: rotation3D->rows = <error: Cannot access memory at address 0x0>
+    (gdb) next
+
+    Program received signal SIGSEGV, Segmentation fault.
+
+    Acima, dei um comando para mostrar o valor de rotation3D->rows, para ver se efetivamente tinha sido atribuído o valor 4, e recebmos o erro de que não é possível acessar a memória no endereço especificado
+    Esse erro ocorre também quando há a atribuição as propriedades 'col' e 'data' da struct Matrix
+
+3) Para corrigir
+    - devemos alocar dinâmicamente memória primeiramente a rotation3D e depois disso atribuir valores as propriedades a rows, cols e data
+Também devemos retirar o ' free(text) ', pois estamos tentando desalocar uma memória de um ponteiro que nem foi alocado dinâmicamente
+
+4) Verificando a correção com o valgrind: 
+    ==24250== HEAP SUMMARY:
+    ==24250==     in use at exit: 0 bytes in 0 blocks
+    ==24250==   total heap usage: 6 allocs, 6 frees, 112 bytes allocated
+    ==24250== 
+    ==24250== All heap blocks were freed -- no leaks are possible

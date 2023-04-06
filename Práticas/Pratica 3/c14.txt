@@ -1,0 +1,23 @@
+1) Analise o código e tente identificar eventuais erros:
+No programa, a variável 'fact' não foi inicializada, o que causa um comportamento estranho e erro inesperado no programa, deixando de calcular o fatorial dos números de forma correta.
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas: utilizando valgrind:
+    ==9797== Conditional jump or move depends on uninitialised value(s)
+    ==9797==    at 0x48CE958: __vfprintf_internal (vfprintf-internal.c:1687)
+    ==9797==    by 0x48B8D3E: printf (printf.c:33)
+    ==9797==    by 0x109204: main (c14.c:12)
+    ==9797==  Uninitialised value was created by a stack allocation
+    ==9797==    at 0x109189: main (c14.c:3)
+
+3) Para corrigir:
+    - Deve-se inicializar a variável 'fact' com o valor 1, para tornar possível o calculo fatorial de um número.
+
+4) Depois de corrigido, checando com valgrind:
+    Positive integer:4
+    Factorial 4 = 24
+    ==10957== 
+    ==10957== HEAP SUMMARY:
+    ==10957==     in use at exit: 0 bytes in 0 blocks
+    ==10957==   total heap usage: 2 allocs, 2 frees, 2,048 bytes allocated
+    ==10957== 
+    ==10957== All heap blocks were freed -- no leaks are possible

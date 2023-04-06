@@ -1,0 +1,24 @@
+1) Analise o código e tente identificar eventuais erros:
+O código realizar a alocação dinâmica de memória através do malloc de 40 bytes para a variavel inteira "a"
+Depois disso, é feito um loop percorrendo "a" até a posição 11, porém isso irá extrapolar o limite de memória reservado para o inteiro, cujo limite na iteração deve ser 10 pois:
+- um inteiro ocupa 4 bytes de memória, logo se vamos realizar 10 iterações vão ser alocados 10 * 4 = 40 bytes, que é o limite estabelecido pelo malloc realizado no inteiro "a".
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+Ao utilizarmos o valgrind, confirmamos o erro: 
+     Invalid write of size 4
+    ==29307==    at 0x1091D8: main (in /home/danijnog/ufmg/ED/estrutura-de-dados/Práticas/Pratica 3/programa)
+    ==29307==  Address 0x4a4c068 is 0 bytes after a block of size 40 alloc'd
+    ==29307==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+    ==29307==    by 0x1091A5: main (in /home/danijnog/ufmg/ED/estrutura-de-dados/Práticas/Pratica 3/programa)
+
+    mostrando que já usamos todos os 40 bytes alocados para a variável 'a' através do malloc, e que não foi possível realizar a ultima iteração do inteiro de tamanho 4 bytes.
+
+3) Para corrigirmos o código
+    - basta realizarmos 10 iterações no loop for ao invés de 11.
+
+4) Verificando a remoção do erro: com Valgrind
+    ==31372== HEAP SUMMARY:
+    ==31372==     in use at exit: 0 bytes in 0 blocks
+    ==31372==   total heap usage: 1 allocs, 1 frees, 40 bytes allocated
+    ==31372== 
+    ==31372== All heap blocks were freed -- no leaks are possible

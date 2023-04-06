@@ -1,0 +1,25 @@
+1) Analise o código e tente identificar eventuais erros:
+Na segunda iteração do "for", estamos tentando acessar uma posição do vetor a[10] que não foi inicializada, que é a útlima posição do vetor devido ao " i < 10 " no loop for.
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+Confirmamos o erro ao rodar o valgrind: 
+    ==5986== Conditional jump or move depends on uninitialised value(s)
+    ==5986==    at 0x48CE958: __vfprintf_internal (vfprintf-internal.c:1687)
+    ==5986==    by 0x48B8D3E: printf (printf.c:33)
+    ==5986==    by 0x1091EE: main (c2.c:11)
+
+    mostrando também a linha que ocorre o erro no arquivo (linha 11).
+
+3) Para corrigirmos o código:
+    - basta no segundo loop fazermos a iteração com " i < 9 " acessando apenas as posições que foram inicializadas do vetor.
+
+4) Verificando a remoção do erro: com Valgrind
+    ==7183== 
+    0 1 2 3 4 5 6 7 8 
+    ==7183== 
+    ==7183== HEAP SUMMARY:
+    ==7183==     in use at exit: 0 bytes in 0 blocks
+    ==7183==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+    ==7183== 
+    ==7183== All heap blocks were freed -- no leaks are possible
+

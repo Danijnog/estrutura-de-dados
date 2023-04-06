@@ -1,0 +1,41 @@
+1) Analise o código e tente identificar eventuais erros:
+O problema é que alocamos dinamicamente 8 bytes pro ponteiro 'msg', o qual depois passamos uma string de 9 caracteres, excedendo o limite de memória alocado para o ponteiro.
+Além disso, temos que considerar o '\0' no final da string por padrão que determina o final do texto, com isso estouramos o limite da memória alocada para o ponteiro 'msg'
+
+Por fim, precisamos desalocar a memória que foi alocada dinamicamente.
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+Confirmamos o erro ao rodar o programa com o gdb:
+    (gdb) print msg[0]
+    $14 = 82 'R'
+    (gdb) print msg[1]
+    $15 = 111 'o'
+    (gdb) print msg[2]
+    $16 = 108 'l'
+    (gdb) print msg[3]
+    $17 = 98 'b'
+    (gdb) print msg[4]
+    $18 = 101 'e'
+    (gdb) print msg[5]
+    $19 = 114 'r'
+    (gdb) print msg[6]
+    $20 = 116 't'
+    (gdb) print msg[7]
+    $21 = 111 'o'
+    (gdb) print msg[8]
+    $22 = 110 'n'
+    (gdb) print msg[9]
+    $23 = 0 '\000'
+
+Vemos que na NONA posição fica o ultimo caracter ( \0 ), então temos que alocar no total 10 bytes para o ponteiro, já que a palavra vai de 0 até 9.
+
+3) Para corrigir:
+    - basta alocarmos 10 bytes para o ponteiro ao invés de 8, já que a palavra vai de 0 até 9 contanto o último caracter ( \0 ).
+    - desalocar a memória que foi alocada dinamicamente através da função: free(msg);
+
+4) Após corrigido, analisando o programa com o valgrind:
+    ==8387== HEAP SUMMARY:
+    ==8387==     in use at exit: 0 bytes in 0 blocks
+    ==8387==   total heap usage: 2 allocs, 2 frees, 1,034 bytes allocated
+    ==8387== 
+    ==8387== All heap blocks were freed -- no leaks are possible

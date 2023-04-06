@@ -1,0 +1,25 @@
+1) Analise o código e tente identificar eventuais erros:
+O problema é que estamos alocando dinâmicamente memória para o array ' intArray ' e não estamos realizando a desalocação de memória utilizando a função 'free()'
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+Utilizando o valgrind para verificarmos o vazamento de memória:
+    ==7873== HEAP SUMMARY:
+    ==7873==     in use at exit: 4,000 bytes in 1 blocks
+    ==7873==   total heap usage: 2 allocs, 1 frees, 5,024 bytes allocated
+    ==7873== 
+    ==7873== 4,000 bytes in 1 blocks are definitely lost in loss record 1 of 1
+    ==7873==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+    ==7873==    by 0x1091E7: main (c5.c:9)
+
+    4000 bytes não são desalocados do array ' intArray '
+
+3) Para corrigir:
+    - devemos fazer a desalocação de memória do ' intArray ' ao final do programa,
+utilizando a função ' free(intArray) '
+
+4) Após realizarmos a correção, notamos que toda a memória alocada foi desalocada:
+    ==8397== HEAP SUMMARY:
+    ==8397==     in use at exit: 0 bytes in 0 blocks
+    ==8397==   total heap usage: 2 allocs, 2 frees, 5,024 bytes allocated
+
+    ==8397== All heap blocks were freed -- no leaks are possible

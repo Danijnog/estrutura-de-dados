@@ -1,0 +1,21 @@
+1) Analise o código e tente identificar eventuais erros:
+O problema é que alocamos 26 bytes para a variável do tipo char "alphabet" e tentamos fazer uma iteração 26 vezes atribuindo a cada vez uma letra a um endereço de memória,
+porém temos que adicionar mais um byte para o caracter ' \0 ' que termina a string.
+Então, a útlima escrita é feita em um outro endereço de memória sem ser o bloco de 26 bytes que alocamos;
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+Utilizando valgrind detectamos o erro:
+    ==8372==    by 0x1091EB: main (c7correto.c:13)
+    ==8372==  Address 0x4a4c05a is 0 bytes after a block of size 26 alloc'd
+    ==8372==    at 0x483DD99: calloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+    ==8372==    by 0x1091A3: main (c7correto.c:6)
+
+3) Para corrigirmos:
+    - basta fazermos a alocação dinâmica de "alphabet" com 27 elementos ao invés de 26, utilizando assim 27 bytes.
+
+4) Depois de corrigido, checando com o valgrind:
+    ==8966== HEAP SUMMARY:
+    ==8966==     in use at exit: 0 bytes in 0 blocks
+    ==8966==   total heap usage: 2 allocs, 2 frees, 1,051 bytes allocated
+    ==8966== 
+    ==8966== All heap blocks were freed -- no leaks are possible

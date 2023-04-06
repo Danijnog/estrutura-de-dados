@@ -1,0 +1,41 @@
+1) Analise o código e tente identificar eventuais erros:
+O problema é que estamos realizando um loop infinito, em que alocamos dinamicamente um bloco de memória de 128 bytes a variável p e imprimos o valor do ponteiro sem nenhuma condição de parada.
+Além disso, estamos basicamente consumindo MUITA memória do sistema e não está sendo desalocado nada.
+
+2) Utilizando as ferramentas, confirme a sua avaliação ou identifique problemas:
+Executando o gdb e dando o comando 'next' controlamos melhor o loop, porém vemos que ele "nunca" acaba:
+
+    (gdb) next
+    9                       p = malloc(128);
+    (gdb) next
+    10                      printf("%ld\n", (long)p);
+    (gdb) next
+    93824992252576
+    9                       p = malloc(128);
+    (gdb) next
+    10                      printf("%ld\n", (long)p);
+    (gdb) next
+    93824992253760
+    9                       p = malloc(128);
+    (gdb) next
+    10                      printf("%ld\n", (long)p);
+    (gdb) next
+    93824992253904
+    9                       p = malloc(128);
+    (gdb) next
+    10                      printf("%ld\n", (long)p);
+    (gdb) next
+    93824992254048
+    9                       p = malloc(128);
+    (gdb) next
+    10                      printf("%ld\n", (long)p);
+
+3) Para corrigir:
+    - Basta retiramos o loop infinito que não tem necessidade, e adicionarmos a desalocação da memória do ponteiro 'p'
+
+4) Após a correção, retirando o loop infinito e desalocando memória:
+    ==10845== HEAP SUMMARY:
+    ==10845==     in use at exit: 0 bytes in 0 blocks
+    ==10845==   total heap usage: 2 allocs, 2 frees, 1,152 bytes allocated
+    ==10845== 
+    ==10845== All heap blocks were freed -- no leaks are possible
