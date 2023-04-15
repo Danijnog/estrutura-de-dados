@@ -47,3 +47,7 @@ void imprimePilha(struct fila *f) {
     imprimeFila(f);
 }
 
+void destroiPilha(struct fila *f) {
+    destroiFila(f);
+}
+

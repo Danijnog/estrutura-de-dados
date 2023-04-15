@@ -59,3 +59,8 @@ void imprimeFila(struct fila *p) {
     }
 }
 
+void destroiFila(struct fila *p) {
+    p->inicio = 0;
+    p->fim = 0;
+    p->tamanho = 0;
+}

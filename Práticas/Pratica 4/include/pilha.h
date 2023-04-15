@@ -10,6 +10,7 @@ void criaPilha(struct fila *f);
 int empilha(struct fila *f);
 int desempilha(struct fila *f);
 void imprimePilha(struct fila *f);
+void destroiPilha(struct fila *f);
 void itemEmpilhado(struct fila *f, int item);
 
 #endif

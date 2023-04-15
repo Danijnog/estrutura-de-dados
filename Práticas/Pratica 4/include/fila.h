@@ -17,6 +17,7 @@ int enfileira(struct fila *p, int item);
 int desenfileira(struct fila *p);
 int filaCheia(struct fila *p);
 int filaVazia(struct fila *p);
+void destroiFila(struct fila *p);
 
 void imprimeFila(struct fila *p);
 

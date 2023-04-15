@@ -37,11 +37,17 @@ int main() {
     empilha(p); //empilha os itens por meio da fila circular
     printf("\n");
 
+    printf("\nTamanho da pilha antes de ser destruída: %d\n", p->tamanho);
+
     printf("Desempilhando...\n");
     for(int i = 0; i < MAX_FILA - 1; i++)
     {
         desempilha(p);
     }
+  
+    printf("\nDestruindo a pilha..\n");
+    destroiPilha(p);
+    printf("Tamanho da pilha depois de ser destruída: %d\n", p->tamanho);
 
     free(p->itens);
     free(p);
