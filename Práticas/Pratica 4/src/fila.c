@@ -44,7 +44,6 @@ int desenfileira(struct fila *p) {
         p->inicio = (p->inicio + 1) % MAX_FILA; //incremente a frente usando aritmetica modular para a fila circula
         p->tamanho--; //decrementa o tamanho da fila
     }
-
     return aux;
 }
 
