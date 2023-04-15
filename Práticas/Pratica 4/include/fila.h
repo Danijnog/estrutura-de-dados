@@ -7,7 +7,7 @@
 #define MAX_FILA 11
 
 struct fila {
-    int *itens; //vai ser um ponteiro pois vai armazenar diversos valores em diferentes posições no array
+    int *itens; //vai ser um ponteiro pois vai armazenar diversos valores em diferentes posições no array e aloquei dinâmicamente na main
     int inicio, fim;
     int tamanho;
 };
@@ -15,7 +15,6 @@ struct fila {
 void criaFila(struct fila *p);
 int enfileira(struct fila *p, int item);
 int desenfileira(struct fila *p);
-
 int filaCheia(struct fila *p);
 int filaVazia(struct fila *p);
 

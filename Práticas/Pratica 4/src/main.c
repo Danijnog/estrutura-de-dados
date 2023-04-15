@@ -7,12 +7,12 @@
 
 int main() {
 
-    struct fila *p = malloc(sizeof(struct fila)); //aloquei memoria dinamicamente para a fila
-    p->itens = malloc(sizeof(int) * MAX_FILA); //vamos alocar memoria dinamicamente para o vetor de itens, que é um inteiro * o tamanho maximo da fila
+    struct fila *p = malloc(sizeof(struct fila)); //alocando memoria dinamicamente para a fila
+    p->itens = malloc(sizeof(int) * MAX_FILA); //alocando memoria dinamicamente para o vetor de itens, que é um inteiro * o tamanho maximo da fila
 
     int *itemDigitadoPeloUsuario = malloc(sizeof(int) * MAX_FILA); //também aloquei memória para o digito que o usuário vai digitar pra empilhar
     printf("Digite os 10 digitos inteiros a serem empilhados: \n");
-    
+
     for(int i = 0; i < MAX_FILA - 1; i++)
     {
         if(scanf("%d", &itemDigitadoPeloUsuario[i]) != 1) //se o usuário digitar algo que não seja um inteiro, o programa vai entrar nesse if e encerrar

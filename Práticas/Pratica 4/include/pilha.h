@@ -1,7 +1,6 @@
 /* Implementação de uma pilha através de uma fila circular
 Pilha -> Last in, first out */
 
-
 #ifndef PILHA_H
 #define PILHA_H
 
