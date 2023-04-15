@@ -15,9 +15,9 @@ int empilha (struct fila *f) { //empilha os itens por meio da fila circular, des
     {
         for(int i = 0; i < f->fim; i++)
         {
-            aux = desenfileira(f);
-            f->itens[f->fim] = aux;
-            f->tamanho++;
+            aux = desenfileira(f); //desenfileira um elemento da fila e armazena na variável aux
+            f->itens[f->fim] = aux; //o item que tiver no fim da fila vai receber a variável aux
+            f->tamanho++; //incrementa o tamanho
             printf("%d ", f->itens[f->fim]);
         }
     }
