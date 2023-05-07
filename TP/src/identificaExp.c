@@ -7,108 +7,90 @@
 
 int identificaExpInfixa(char *exp) {
     int tamanhoExp = strlen(exp);
-    int ehOperando = 0, ehOperador = 0;
+    int countOperando = 0; //esse contador vai auxiliar para verificar a validade da expressão
+    int countOperador = 0; //esse outro contador também auxilia para verificar a validade da expressão
     int virgula = 0;
-    int verificaRepeticao = 1; //variável para verificar se mais de um número é digitado sem um operador entre eles
-
-    if(exp[0] == '+' || exp[0] == '-' || exp[0] == '/' || exp[0] == '*' || exp[0] == ',')
-    {
-        printf("Expressão inválida! \n");
-        exit(1);
-    }
-
-    else if(tamanhoExp == 1)
-    {
-        printf("Expressão inválida! Apenas 1 caracter passado como parâmetro! \n");
-        exit(1);
-    }
 
     for(int i = 0; i < tamanhoExp; i++)
     {
-        if(exp[i] == ' ') //espaço em branco
-            continue; //ignora os espaços em branco
-
-        else if(exp[i] >= '0' && exp[i] <= '9') //se for um número
+        if(exp[i] == ' ' || exp[i] == '(' || exp[i] == ')') 
+            continue; //ignora os espaçoes em branco e os parênteses
+        
+        else if(exp[i] >= '0' && exp[i] <= '9')
         {
-            if(verificaRepeticao == 2)
+            countOperando++;
+            virgula = 0;
+        }
+        
+        else if(exp[i] == '.')
+        {
+            countOperando--;
+            if(virgula)
             {
-                printf("Caracteres repetidos! \n");
-                exit(1);
+                printf("Virgula colocada incorretamente!\n");
                 return 0;
             }
-            else 
-                verificaRepeticao++;
-            
-            ehOperando = 1;
-            ehOperador = 0;  
+            virgula++;
         }
 
-        else if(exp[i] == ',') //se for uma virgula
-        {
-            if(virgula) //se ja tiver uma virgula no numero
-            {
-                printf("Virgula colocada incorretamente! \n");
-                exit(1);
-            }
-            virgula = 1;
-        }
+        else if(exp[tamanhoExp - 1] == '+' || exp[tamanhoExp - 1] == '-' || exp[tamanhoExp - 1] == '*' || exp[tamanhoExp - 1] == '/') //se o ultimo caracter da expressão for um operador significa que não é infixa
+            return 0;
 
-        else if(exp[i] == '+' || exp[i] == '-' || exp[i] == '*' || exp[i] == '/') //se for um desses operadores
+        else if((exp[i] == '+' || exp[i] == '-' || exp[i] == '*' || exp[i] == '/')) //verificando também se o ultimo digito da expressão é um numero, porque se não for então significa que a expressão não é infixa e pode ser posfixa
         {
-            if(ehOperador && !ehOperando) //se for um operador e não for um operando
-            {
-                printf("Expressão não é infixa!");
-                return 0; //não é infixa
-            }
-            ehOperando = 0;
-            verificaRepeticao--; //reinicia a verificação de repetição de caracteres
-            ehOperador = 1;
-            virgula = 0; //reinicia a verificação da virgula para o próximo número
+            countOperador++;
         }
-       
+           
         else
         {
-            printf("Caracteres inválidos!\n");
-            exit(1);
+            return 0;
         }
     }
-    return (ehOperando && !ehOperador);
+    return(countOperando -1 >= countOperador);
 }
 
-int identificaExpPosFixa(char *exp) {
-    int tamanhoExp = strlen(exp);
-    char *token;
+int identificaExpPosfixa(char *exp) {
     int count = -1; // o count vai servir para fazer a lógica de se é uma expressão pos-fixa ou nao
+    int tamanhoExp = strlen(exp);
+    int virgula = 0;
 
-    token = strtok(exp, " "); //recebe a expressão e o delimitador
-
-    if(tamanhoExp == 1) //se for passado somente um número ou um operador na expressãp
+    if(tamanhoExp == 1) //se for passado somente um número ou um operador na expressão
     {
         printf("Expressão inválida! Apenas 1 caracter passado como parâmetro!\n");
-        exit(1);
+        return 0;
     }
 
     for(int i = 0; i < tamanhoExp; i++)
     {
-        while(token != NULL)
+        if(exp[i] == ' ')
+            continue;
+
+        else if(exp[i] == '.')
         {
-            if(token[i] >= '0' && token[i] <= '9')
-            {
-                count++; //cada vez que encontra um número incrementa o count
-            }
-
-            else if(token[i] == '+' || token[i] == '-' || token[i] == '*' || token[i] == '/')
-            {
-                count--; //cada vez que encontra uma operação decrementa o count
-            }
-
-            else //se não for um caracter ou um digito
+           if(virgula)
+           {
+                printf("Virgula colocada incorretamente!\n");
                 return 0;
-
-        printf("Token: %s \n ", token);
-        token = strtok(NULL, " ");
+           }
+           virgula++;
         }
-    }
 
-    return (count == 0); //se o count for igual a 0, a expressão é pos fixa e retorna verdadeira
+        else if(exp[i] >= '0' && exp[i] <= '9')
+        {
+            virgula = 0;
+            count++; //cada vez que encontra um número incrementa o count
+        }
+
+        else if(exp[i] == '+' || exp[i] == '-' || exp[i] == '*' || exp[i] == '/')
+        {
+            count--; //cada vez que encontra uma operação decrementa o count
+        }
+        
+        else //se não for um caracter ou um digito
+            return 0;
+
+    }
+    return (count >= 0); //se o count for igual a 0, a expressão é pos fixa e retorna verdadeira
 }
+
+
