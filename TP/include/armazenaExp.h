@@ -3,6 +3,10 @@
 
 #define MAX_TAM_EXP 1000
 
+/**
+ * @brief Estrutura de Dados pilha que será utilizada no programa
+ * 
+ */
 typedef struct Pilha {
     char itens[MAX_TAM_EXP];
     int topo;
@@ -27,7 +31,10 @@ int validaEntrada(int argc, char **argv);
  */
 int armazenaExp(pilha *p, char *exp);
 
-
+/**
+ * @brief Todas as funções abaixo são relacionadas a pilha para, respectivamente, criar uma pilha, empilhar uma expressão, desempilhar, limpar e imprimir a pilha.
+ * 
+ */
 void criaPilha(pilha *p);
 void empilha(pilha *p, char *exp);
 char desempilha(pilha *p);

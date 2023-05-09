@@ -20,6 +20,7 @@ float operacaoPosfixa(float numero1, float numero2, char operador);
  * @param p - pilha a ser utilizada
  * @return * float 
  */
+
 float resolvePosfixa(char *exp, pilha *p);
 
 #endif

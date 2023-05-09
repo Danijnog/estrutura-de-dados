@@ -11,7 +11,7 @@ void criaPilha(pilha *p) {
 
 void empilha(pilha *p, char *exp) {
     if(p->tamanho == MAX_TAM_EXP)
-        printf("Pilha cheia!\n");
+        fprintf(stderr, "Pilha cheia!\n");
     
     p->topo++;
     p->itens[p->topo] = *exp;

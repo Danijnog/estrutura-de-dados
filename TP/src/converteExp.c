@@ -1,5 +1,6 @@
 #include "../include/converteExp.h"
 #include "../include/armazenaExp.h"
+#include "../include/msgAssert.h"
 
 #include <string.h>
 #include <stdlib.h>
@@ -15,7 +16,7 @@ char *infixaParaPosfixa(char *exp, pilha *p) {
     devido a manipulação que fiz no final da função em adicionar um espaço entre o ultimo numero e o ultimo caracter*/
     char *posfixa = calloc((tamanhoExp + 2), sizeof(char)); 
     if(posfixa == NULL)
-        printf("Erro na alocação de memória!\n");
+        erroAssert(0, "Erro na alocação de memória!\n");
 
     for(i = 0; exp[i] != '\0'; i++)
     {
@@ -110,10 +111,9 @@ char *posfixaParaInfixa(char *exp, pilha *p) {
         switch(exp[i])
         {
             case '+':
-            case '-':
+            case '-':   
             case '*':
             case '/':
-                //printf("Entrou!\n");
                 countEmpilha = 0; /* zera o contador da quantidade de tokens que empilhei */
 
                 /* Desempilho os dois tokens empilhados */
@@ -126,7 +126,7 @@ char *posfixaParaInfixa(char *exp, pilha *p) {
                 concatena = malloc(tamanhoExp * 2);
                 if(concatena == NULL)
                 {
-                    printf("Erro na alocação de memória!\n");
+                    fprintf(stderr, "Erro na alocação de memória!\n");
                     free(operando1);
                     free(operando2);
                 }
@@ -137,12 +137,12 @@ char *posfixaParaInfixa(char *exp, pilha *p) {
                     pilhaAux[topoAux] = concatena; /* empilha o resultado da concatenação */
                 }
                 concatena = NULL;
+                free(concatena);
                 break;
                 
             default:
                 while(token != NULL)
                 {
-                    //printf("Token: %s\n", token);
                     if(ehOperando(token))
                     {
                         if(countEmpilha >= 2) /* verificação para empilhar sempre no máximo 2 tokens a cada vez */
@@ -151,8 +151,6 @@ char *posfixaParaInfixa(char *exp, pilha *p) {
                         topoAux++; /* empilha o token */
                         pilhaAux[topoAux] = token;
                         countEmpilha++;
-                        //printf("Count empilha: %d\n", countEmpilha);
-                        //printf("Token empilhado: %s\n", token);
                     }
                     token = strtok(NULL, " ");
                 }
@@ -164,7 +162,9 @@ char *posfixaParaInfixa(char *exp, pilha *p) {
     infixa = pilhaAux[topoAux];
     topoAux--;
     armazenaExp(p, infixa); /* armazena a expressão convertida na pilha */
+
     for(int j = 0; j <= topoAux; j++)
         free(pilhaAux[j]);
+
     return infixa;
 }

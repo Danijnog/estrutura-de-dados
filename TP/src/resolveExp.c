@@ -1,4 +1,5 @@
 #include "../include/resolveExp.h"
+#include "../include/msgAssert.h"
 
 #include <string.h>
 #include <stdio.h>
@@ -38,7 +39,7 @@ float resolvePosfixa(char *exp, pilha *p) {
     /* Alocando memória com o objetivo de converter 'p->itens' para um float ao invés de um char, devido a erros de precisão */
     float *itens =  calloc(tamanhoExp, sizeof(pilha));
     if(itens == NULL)
-        printf("Erro na alocação dinâmica de memória!\n");
+        erroAssert(0, "Erro na alocação dinâmica de memória!\n");
     
     *itens = atof(p->itens); /* função para converter 'p->itens' para um ponteiro de float 'itens' */
     while(token != NULL)
@@ -56,7 +57,7 @@ float resolvePosfixa(char *exp, pilha *p) {
             resultado = operacaoPosfixa(operando2, operando1, token[0]); /* realiza a operação com os dois valores desempilhados */
 
             p->topo++;
-            itens[p->topo] = resultado; /* empilha */
+            itens[p->topo] = resultado; /* empilha o resultado */
             p->tamanho++;
         }
 
@@ -64,7 +65,7 @@ float resolvePosfixa(char *exp, pilha *p) {
         {
             resultado = atof(token); /* converte a string token para um float */
             p->topo++;
-            itens[p->topo] = resultado; /* empilha */
+            itens[p->topo] = resultado; /* empilha o resultado */
             p->tamanho++;
         }
         token = strtok(NULL, " ");

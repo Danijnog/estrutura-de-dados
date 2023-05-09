@@ -6,6 +6,7 @@
 #include "../include/converteExp.h"
 #include "../include/identificaExp.h"
 #include "../include/resolveExp.h"
+#include "../include/msgAssert.h"
 
 void lerEntrada(int argc, char **argv) {
     char *expAuxiliar[MAX_TAM_EXP]; /* variável auxiliar que vai armazenar cada linha do arquivo */
@@ -37,6 +38,7 @@ void lerEntrada(int argc, char **argv) {
         i++;
     }
 
+    printf("------------- Bem vindo(a) ao programa resolvedor de expressões numéricas! -------------  \n\n");
     for(int j = 0; j < countNumLinhas; j++) /* percorrendo o número de linhas */
     {
         char *posicao = strstr(expAuxiliar[j], "LER"); /* verifica a ocorrência da string "LER" */
@@ -46,6 +48,12 @@ void lerEntrada(int argc, char **argv) {
             pois a primeira posição é o comando LER e o segundo indica se é POSFIXA ou INFIXA */
             strcpy(expressao, posicao + strlen("LER POSFIXA")); /* copia a expressão encontrada no arquivo para a variável expressao */
             expressao[strcspn(expressao, "\n")] = '\0'; /* removendo o "\n" no final e adicionando '\0' */
+
+            if(expressao[strlen(expressao + 1)] == ' ') /* caso tenha algum espaço em branco no final de uma expressão */
+            {
+                fprintf(stderr, "Linha: %d\n", j + 1);
+                erroAssert(0, "Por favor, remova o espaço em branco que está no final da linha citada acima!\n");
+            }
 
             printf("Lendo expressão... \n");
             if(identificaExpInfixa(expressao))
@@ -97,99 +105,11 @@ void lerEntrada(int argc, char **argv) {
     for(int k = 0; k < countNumLinhas; k++) /* desalocando a memória alocada pelo strdup */
         free(expAuxiliar[k]);
     
-    //printf("%s ", exp[0]);
-
-    // for(int j = 0; j < countNumeroExpressoes; j++)
-    // {
-    //     printf("Expressão %d: %s", j+1, exp[j]);
-    // }
-
     fclose(arquivo);
 }
 
 int main (int argc, char **argv) {
     lerEntrada(argc, argv);
-    //Testando a expressão infixa
-    // char exp[1000] = "2,3 + 5";
-    // if(identificaExpInfixa(exp))
-    //     printf("É infixa: %s\n", exp);
-    // else 
-    //     printf("Não é infixa: %s\n", exp);
-
-
-    // // remove o caractere de nova linha do final da string
-    // // exp2[strcspn(exp2, "\n")] = 0;
-
-    // // Testando a expressão pos-fixa
-    // char exp2[1000] = "5 3,2 2 + * 4,2 / 6,0 -";
-    // if (identificaExpPosFixa(exp2)) {
-    //     printf("A expressao eh pos-fixa.\n");
-    //     pilha p[MAX_TAM_EXP];
-    //     criaPilha(p);
-    //     empilha(p, exp2);
-    //     imprimePilha(p);
-    // } else {
-    //     printf("A expressao nao eh pos-fixa.\n");
-    // }
-
-
-    //Testando a pilha, junto com as expressões infixa e pos-fixa
-    //char expressao[MAX_TAM_EXP] = "( ( ( ( ( 0.016298 ) * ( ( ( ( ( ( ( ( ( ( ( ( 5.451572 ) + ( ( 6.522725 ) + ( 4.053423 ) ) ) + ( 2.237167 ) ) * ( ( 6.761665 ) * ( ( 8.929393 ) + ( 3.288268 ) ) ) ) / ( 7.008292 ) ) + ( 8.866717 ) ) + ( ( ( ( 9.736813 ) + ( ( 2.670779 ) - ( 8.429765 ) ) ) + ( 9.916589 ) ) + ( 8.388820 ) ) ) / ( 5.781327 ) ) - ( ( 0.114987 ) / ( 9.796989 ) ) ) - ( ( 2.566517 ) * ( ( 7.189669 ) / ( 1.085716 ) ) ) ) + ( ( ( 3.230236 ) - ( ( ( 9.262806 ) + ( 4.472587 ) ) / ( 1.116756 ) ) ) - ( 4.147509 ) ) ) + ( 9.299896 ) ) ) - ( 6.391134 ) ) - ( ( ( ( ( 4.968851 ) / ( 5.251583 ) ) / ( 4.725458 ) ) * ( ( ( 2.956025 ) / ( 3.680148 ) ) * ( 2.821245 ) ) ) * ( ( 5.935397 ) + ( 2.565921 ) ) ) ) * ( ( 0.599650 ) * ( ( ( ( ( ( 7.011593 ) + ( 6.290626 ) ) - ( 3.518166 ) ) / ( 0.333738 ) ) + ( 8.825464 ) ) * ( 4.059770 ) ) ) )";
-    // char expressao[MAX_TAM_EXP] =  "5.4352 4 * 2.5301 + 3.2 4 / -" ;
-    // printf("Identificando expressão....\n");
-
-    // if(identificaExpInfixa(expressao))
-    // {
-    //     printf("Expressão infixa!\n");
-    //     pilha p[MAX_TAM_EXP];
-    //     armazenaExp(p, expressao);
-
-    //     char *posfixa;
-    //     printf("Convertendo expressão para posfixa....\n");
-    //     posfixa = infixaParaPosFixa(expressao, p);
-    //     printf("Expressão no formato posfixa: %s\n", posfixa);
-        
-    //     limpaPilha(p); //limpa a pilha para armazenar a nova expressão no formato posfixa
-    //     armazenaExp(p, posfixa); //armazeno a nova expressao no formato posfixa na pilha
-
-    //     float resultadoPosFixa = resolvePosFixa(posfixa, p);
-    //     printf("Resultado da posfixa: %f \n", resultadoPosFixa);
-
-    //     free(posfixa);
-    //     limpaPilha(p);
-    // }
-    
-    // else if(!identificaExpInfixa(expressao) && (identificaExpPosFixa(expressao)))
-    // {
-    //     printf("Expressão posfixa!\n");
-    //     pilha p2[MAX_TAM_EXP];
-    //     armazenaExp(p2, expressao);
-    //     printf("%s \n", expressao);
-
-    //     char *infixa;
-    //     printf("Convertendo expressão para infixa....\n");
-    //     infixa = posfixaParaInfixa(expressao);
-    //     printf("Expressão no formato infixa: %s\n", infixa);
-    //     /* Liberar a memória armazenada pela infixa */
-    //     //free(infixa);
-
-
-    //     limpaPilha(p2);    
-    // }
-
-    // else
-    //     printf("Expressão inválida! \n");
-    
-    // char infixa[MAX_TAM_EXP] = "(2 + 3) * 5 / 2";
-    // pilha p[MAX_TAM_EXP];
-
-    // char *posfixa;
-    // posfixa = infixaParaPosFixa(infixa, p);
-    
-    // printf("Infixa: %s\n", infixa);
-    // printf("Posfixa: %s\n", posfixa);
-    // free(posfixa);
 
     return 0;
-
 }
