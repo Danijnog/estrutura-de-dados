@@ -18,7 +18,7 @@ void inserirDireita(No *no, int valor) {
         if(valor < no->dir->conteudo) /* se o valor for menor que o conteudo do nó a direita*/
             inserirEsquerda(no->dir, valor);
         
-        else
+        else if(valor > no->dir->conteudo)
             inserirDireita(no->dir, valor);
     }
 }
@@ -39,7 +39,7 @@ void inserirEsquerda(No *no, int valor) {
         if(valor < no->esq->conteudo) /* se o valor for menor que o conteudo do nó a esquerda */
             inserirEsquerda(no->esq, valor);
         
-        else
+        else if(valor > no->esq->conteudo)
             inserirDireita(no->esq, valor);
     }
 }
@@ -59,7 +59,7 @@ void inserir(Tree *tree, int valor) {
         if(valor < tree->raiz->conteudo) /* se o valor for menor que o conteúdo da raiz */
             inserirEsquerda(tree->raiz, valor);
         
-        else
+        else if(valor > tree->raiz->conteudo)
             inserirDireita(tree->raiz, valor);
     }
 }
