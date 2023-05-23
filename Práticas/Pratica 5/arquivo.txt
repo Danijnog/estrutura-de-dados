@@ -1,0 +1,34 @@
+   0 (0)
+       1 (1)
+           2 (2)
+               3 (3)
+               4 (3)
+           5 (2)
+               6 (3)
+               7 (3)
+       8 (1)
+0 testando ancestral(7, 8)
+7 é nó ancestral de: 8
+
+1 testando ancestral(4, 6)
+4 é nó ancestral de: 6
+
+2 testando ancestral(2, 1)
+2 é nó ancestral de: 1
+
+3 testando ancestral(5, 4)
+5 é nó ancestral de: 4
+
+4 testando ancestral(7, 1)
+7 é nó ancestral de: 1
+
+5 testando ancestral(3, 2)
+
+6 testando ancestral(5, 7)
+
+7 testando ancestral(2, 3)
+2 é nó ancestral de: 3
+
+8 testando ancestral(7, 8)
+7 é nó ancestral de: 8
+
