@@ -1,0 +1,90 @@
+Aula Prática 09 - Plano e comparação do critério de balanceamento por altura de uma árvore AVL e por peso.
+
+1) O critério de balanceamento escolhido seria o balanceamento por peso. Esse critério considera o peso de cada nó ao invés de sua altura, e esse peso é determinado pelo número de nós que a subárvore possui, ponderando com um fator de equilíbrio específico.
+
+2) O balanceamento seria realizado mantendo a diferença de peso de uma subárvore a esquerda e de uma subárvore a direita dentro de um padrão pre-estabelecido, atingindo o balanceamento.
+
+3) Teríamos que começar definindo um limite, como um fator de equilíbrio, em que a diferença de peso de uma subárvore da esquerda e a subárvore da direita podem estar para que permaneçam equilibradas e balanceadas.
+A partir disso, teríamos que alterar as funções de inserção e remoção de um nó, para que ao inserir ou remover um nó a árvore continue dentro do fator de equilíbrio mantendo a proporção entre a diferença entre o peso das subárvores da esquerda e da direita.
+As funções de rotação também teriam que ser adaptadas, para reavalir o peso de cada subárvore a partir de cada rotação realizada.
+
+4) Modificações para o algoritmo de inclusão: 
+	- É necessário modificar o algoritmo de inclusão a fim de verificar o peso dos nós de cada subárvore, sendo antes necessário checar se a subárvore esquerda existe ou a subárvore da direita existe em relação a um nó, para então aumentarmos o peso do nó pai de acordo com a quantidade e peso dos nós da subárvore esquerda ou direita.
+Com isso, calculamos o fator de balanceamento com base no peso de cada subárvore em relação a um nó pai, e checamos se está dentro do limite estabelecido que deixa a árvore balanceada.
+
+5) Modificações para o algoritmo de remoção:
+	- Segue a mesma ideia que o algortimo de inclusão, sendo que ao remover um nó, o peso desse nó é retirado da subárvore em que ele pertence, o que já ajusta o peso de todos os nós dessa subárvore.
+Com isso, calculamos o fator de balanceamento novamente com base no peso de cada subárvore em relação a um nó pai, e checamos se está dentro do limite estabelecido que deixa a árvore balanceada.
+
+6) A implementação está no código entregado junto a esse pdf.
+
+7) Comparando o número de rotações da AVL original com a AVL com critério de balanceamento por peso em relação as seguintes inserções na árvore:
+	- 2, 3, 5, 10, 12, 4, 7, 8, 9, 1, 13, 14, 15
+
+## Para a árvore original, obtemos os seguintes dados com gprof:
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00       73     0.00     0.00  BF
+  0.00      0.00     0.00       59     0.00     0.00  height
+  0.00      0.00     0.00       13     0.00     0.00  insert
+  0.00      0.00     0.00        5     0.00     0.00  rotateleft
+  0.00      0.00     0.00        4     0.00     0.00  RR
+  0.00      0.00     0.00        1     0.00     0.00  RL
+  0.00      0.00     0.00        1     0.00     0.00  dump
+  0.00      0.00     0.00        1     0.00     0.00  inorder
+  0.00      0.00     0.00        1     0.00     0.00  preorder
+  0.00      0.00     0.00        1     0.00     0.00  rotateright
+
+ROTAÇÕES: Verificamos que o número de rotações a esquerda foi 5 e rotações a direita foi 1.
+
+## Para a árvore modifica com o fator de balanceamento por peso, obtemos os seguintes dados com gprof:
+%   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00      128     0.00     0.00  BF
+  0.00      0.00     0.00       50     0.00     0.00  weight
+  0.00      0.00     0.00       13     0.00     0.00  dump
+  0.00      0.00     0.00       13     0.00     0.00  insert
+  0.00      0.00     0.00        4     0.00     0.00  rotateleft
+  0.00      0.00     0.00        3     0.00     0.00  RR
+  0.00      0.00     0.00        1     0.00     0.00  RL
+  0.00      0.00     0.00        1     0.00     0.00  rotateright
+
+ROTAÇÕES: Verificamos que o número de rotações a esquerda foi 4 e rotações a direita foi 1.
+
+Agora, a partir dos elementos inseridos tanto na árvore original quanto na modificada, vamos realizar a remoção nas duas árvores para comparar a função de remoção:
+	- Elementos a serem removidos: 3 10 12 8 9 15
+
+## Para a árvore original, obtemos os seguintes dados com gprof:
+%   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00      196     0.00     0.00  BF
+  0.00      0.00     0.00       80     0.00     0.00  height
+  0.00      0.00     0.00       15     0.00     0.00  dump
+  0.00      0.00     0.00       13     0.00     0.00  insert
+  0.00      0.00     0.00        7     0.00     0.00  rotateleft
+  0.00      0.00     0.00        6     0.00     0.00  Delete
+  0.00      0.00     0.00        6     0.00     0.00  RR
+  0.00      0.00     0.00        3     0.00     0.00  rotateright
+  0.00      0.00     0.00        2     0.00     0.00  LL
+  0.00      0.00     0.00        2     0.00     0.00  inorder
+  0.00      0.00     0.00        2     0.00     0.00  preorder
+  0.00      0.00     0.00        1     0.00     0.00  RL
+
+ROTAÇÕES: Verificamos que com inserções e retiradas, o número de rotações a esquerda aumentou para 7 e rotações a direita aumentou para 3 para a árvore original.
+
+## Para a árvore modifica com o fator de balanceamento por peso, obtemos os seguintes dados com gprof:
+%   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00      227     0.00     0.00  BF
+  0.00      0.00     0.00       68     0.00     0.00  weight
+  0.00      0.00     0.00       16     0.00     0.00  dump
+  0.00      0.00     0.00       13     0.00     0.00  insert
+  0.00      0.00     0.00        6     0.00     0.00  Delete
+  0.00      0.00     0.00        4     0.00     0.00  rotateleft
+  0.00      0.00     0.00        3     0.00     0.00  RR
+  0.00      0.00     0.00        3     0.00     0.00  inorder
+  0.00      0.00     0.00        3     0.00     0.00  preorder
+  0.00      0.00     0.00        1     0.00     0.00  RL
+  0.00      0.00     0.00        1     0.00     0.00  rotateright
+
+ROTAÇÕES: Verificamos que com inserções e retiradas, o número de rotações a esquerda continuou 4 e rotações a direita continou 1.
