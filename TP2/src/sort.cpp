@@ -4,6 +4,8 @@
 
 Sort::Sort() {}
 
+Sort::~Sort() {}
+
 void Sort::mergeSort(Point *points, int begin, int end, Point p0) {
     int middle;
     if(begin < end)

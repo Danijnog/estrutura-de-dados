@@ -39,5 +39,4 @@ class Jarvis {
         int getMostLeftIndex(Point *points, int size);
 };
 
-
 #endif

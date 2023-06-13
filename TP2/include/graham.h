@@ -7,9 +7,6 @@
 #include <iostream>
 #include <stdlib.h>
 
-/* Algoritmo de Graham para determinar o fecho convexo de um conjunto de pontos
-    Possui complexidade O(nlog(n))
-*/
 class Graham {
 
     public:
