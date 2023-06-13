@@ -4,6 +4,7 @@
 #include "time.h"
 #include "sys/resource.h"
 
-float userTime(struct rusage *start, struct rusage *end); //função para calcular o tempo de usuario decorrido em segundos
+// Função que retorna o tempo de usuário decorrido em segundos
+float userTime(struct rusage *start, struct rusage *end);
 
 #endif

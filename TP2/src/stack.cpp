@@ -1,4 +1,5 @@
 #include "../include/stack.h"
+#include "exceptions.h"
 
 Stack::Stack()  {
     top = -1;
@@ -9,7 +10,7 @@ Stack::~Stack() {}
 
 void Stack::push(Point item) {
     if(fullStack())
-        throw "A pilha está cheia!\n";
+        throw pilhaCheia();
     
     top++;
     itens[top] = item;
@@ -18,7 +19,7 @@ void Stack::push(Point item) {
 
 Point Stack::pop() {
     if(emptyStack())
-        throw "A pilha está vazia!\n";
+        throw pilhaVazia();
     
     Point unstackedItem = itens[top];
     top--;
@@ -59,13 +60,13 @@ int Stack::getSize() {
 Point Stack::getTop() {
     if(!emptyStack())
         return itens[top];
-    throw "A pilha está vazia! Não foi possível retornar o topo da pilha\n";
+    throw pilhaVazia();
 }
 
 Point Stack::getPoint(int index) {
     if(index >= 0 && index < size)
         return itens[index];
-    throw "O índice está fora do intervalo da pilha!\n";
+    throw indicePilhaInvalido();
 }
 
 Point Stack::nextToTop(Stack &stack) {

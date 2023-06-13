@@ -40,10 +40,10 @@ double Point::computeAngle(Point p) {
 }
 
 int Point::verifyCollinearPoints(Point *points, int n) {
-
     for(int i = 0; i < n; i++)
         if(points[i].getX() != points[i].getY())
             return 0;
+            
     return 1;
 }
 

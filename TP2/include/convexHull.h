@@ -56,7 +56,7 @@ class ConvexHull {
          * @param p0 
          * @return * void 
          */
-        void drawConvexHull(Stack stack, Point p0);
+        void drawConvexHull(Stack stack, Point *points, int size, Point p0);
 };
 
 #endif

@@ -66,7 +66,7 @@ class Point {
          * @param n 
          * @return * int 
          */
-        static int verifyCollinearPoints(Point *points, int n);
+        static int verifyCollinearPoints(Point *points, int size);
 
         /**
          * @brief retorna a coordenada x de um ponto.

@@ -7,7 +7,7 @@ OBJ_DIR = ./obj
 BIN_DIR = ./bin
 
 # Nome do executável
-TARGET = $(BIN_DIR)/main
+TARGET = $(BIN_DIR)/fecho
 
 # Arquivos fonte e objetos
 SOURCES := $(wildcard $(SRC_DIR)/*.cpp)
@@ -22,13 +22,11 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 
 # Regra de ligação
 $(TARGET): $(OBJECTS)
-	$(CXX) $(CXXFLAGS) $^ -o $@ -lgraph
+	$(CXX) $(CXXFLAGS) $^ -o $@ -pg -lgraph
 
-run: all
-	$(TARGET) gmon.out
-
-# Limpeza dos arquivos objetos e do executável
+# Limpeza dos arquivos objetos, executável e gmon.out
 clean:
 	$(RM) -r $(OBJ_DIR)/* $(BIN_DIR)/* coverage/* *.gcda *.gcno gmon.out
 
-.PHONY: clean
+.PHONY: all run gmon.out clean
+

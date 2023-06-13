@@ -4,37 +4,37 @@
 
 Sort::Sort() {}
 
-void Sort::mergeSort(Point *points, int inicio, int fim, Point p0) {
-    int meio;
-    if(inicio < fim)
+void Sort::mergeSort(Point *points, int begin, int end, Point p0) {
+    int middle;
+    if(begin < end)
     {
-        meio = floor((inicio + fim) / 2); // Floor arredonda o valor para baixo caso seja um ponto flutuante
-        mergeSort(points, inicio, meio, p0);
-        mergeSort(points, meio + 1, fim, p0);
-        merge(points, inicio, meio, fim, p0); // Combina as 2 metades de forma ordenada
+        middle = floor((begin + end) / 2); // Floor arredonda o valor para baixo caso seja um ponto flutuante
+        mergeSort(points, begin, middle, p0);
+        mergeSort(points, middle + 1, end, p0);
+        merge(points, begin, middle, end, p0); // Combina as 2 metades de forma ordenada
     }
 }
 
-void Sort::merge(Point *points, int inicio, int meio, int fim, Point p0) {
-    int p1 = meio - inicio + 1;
-    int p2 = fim - meio;
+void Sort::merge(Point *points, int begin, int middle, int end, Point p0) {
+    int p1 = middle - begin + 1;
+    int p2 = end - middle;
 
     // Indices dos subarrays que vão ser temporários
     int indexStart = 0;
     int indexEnd = 0;
 
     // Indice do array points que vai ser a união dos subarrays
-    int indexMerged = inicio;
+    int indexMerged = begin;
 
     // Arrays temporários de subconjunto de pontos
     Point *pointStart = new Point[p1];
     Point *pointEnd = new Point[p2];
 
     for(int i = 0; i < p1; i++)
-        pointStart[i] = points[inicio + i];
+        pointStart[i] = points[begin + i];
     
     for(int j = 0; j < p2; j++)
-        pointEnd[j] = points[meio + 1 + j];
+        pointEnd[j] = points[middle + 1 + j];
 
     // Compara os pontos com base nas coordenadas X e Y
     while(indexStart < p1 && indexEnd < p2) 
@@ -83,12 +83,12 @@ void Sort::merge(Point *points, int inicio, int meio, int fim, Point p0) {
     }
 
     // Ordenar os pontos em relação ao ponto inicial computando o ângulo entre os pontos
-    for(int i = inicio + 1; i <= fim; i++)
+    for(int i = begin + 1; i <= end; i++)
     {
-        for(int j = i + 1; j <= fim; j++)
+        for(int j = i + 1; j <= end; j++)
         {
-            double firstAngle = points[inicio].computeAngle(points[i]);
-            double secondAngle = points[inicio].computeAngle(points[j]);
+            double firstAngle = points[begin].computeAngle(points[i]);
+            double secondAngle = points[begin].computeAngle(points[j]);
 
             if(firstAngle > secondAngle)
             {

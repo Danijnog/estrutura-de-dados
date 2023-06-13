@@ -20,7 +20,7 @@ void ConvexHull::displayConvexHull(Stack stack) {
 
 int ConvexHull::validateDrawConvexHull(Stack stack, Point p0) {
     // Valores definidos com base no limite da janela que é aberta com o graphics.h
-    int xMax = 530;
+    int xMax = 630;
     int yMax = 480;
     if(p0.getX() > xMax || p0.getX() < 0)
         throw coordenadaXInvalida();
@@ -38,7 +38,7 @@ int ConvexHull::validateDrawConvexHull(Stack stack, Point p0) {
     return 1;
 }
 
-void ConvexHull::drawConvexHull(Stack stack, Point p0) {
+void ConvexHull::drawConvexHull(Stack stack, Point *points, int size, Point p0) {
     int gd = DETECT, gm;
 
     if(validateDrawConvexHull(stack, p0))
@@ -46,6 +46,13 @@ void ConvexHull::drawConvexHull(Stack stack, Point p0) {
         initgraph(&gd, &gm, NULL);
         setbkcolor(BLACK);
         setcolor(LIGHTBLUE);
+        
+        // Desenhar os pontos
+        for(int i = 0; i < size; i++)
+        {
+            fillellipse(points[i].getX(), points[i].getY(), 3, 3);
+            delay(300);
+        }
     
         // Mover para o primeiro ponto
         moveto(p0.getX(), p0.getY());
@@ -53,14 +60,15 @@ void ConvexHull::drawConvexHull(Stack stack, Point p0) {
         // Desenhar linhas entre os pontos
         while(!stack.emptyStack())
         {
-            Point p = stack.pop();        
+            Point p = stack.pop();
+            delay(700);      
             lineto(p.getX(), p.getY());
         }
 
         // Fechar a figura
         lineto(p0.getX(), p0.getY());
 
-        delay(5000);
+        delay(10000);
         closegraph();
     }
 }

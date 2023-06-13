@@ -8,6 +8,10 @@
 
 #define TAM 20 // Tamanho do balde pra ser usado no bucketSort
 
+/**
+ * @brief Struct que representa um balde que será utilizado exclusivamente no bucketSort.
+ * 
+ */
 typedef struct bucket {
     Point values[TAM];
     int qtd;

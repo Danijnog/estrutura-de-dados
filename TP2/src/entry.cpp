@@ -34,7 +34,7 @@ void readEntry(int argc, char **argv) {
     Graham graham = Graham();
     Jarvis jarvis = Jarvis();
     ConvexHull convexHull = ConvexHull();
-    Point points[1000];
+    Point points[10000];
 
     struct rusage start, end; // Estrutura para armazenar o tempo de usuário decorrido
     
@@ -45,7 +45,7 @@ void readEntry(int argc, char **argv) {
     
     int size = 0;
     char line[1000];
-    while(file.getline(line, 1000)) // Le cada linha do arquivo até o final
+    while(file.getline(line, 10000)) // Le cada linha do arquivo até o final
     {
         int x, y;
         sscanf(line, "%d %d", &x, &y); // O primeiro valor da linha será a coordenada x, e o segundo valor a coordenada y
@@ -64,32 +64,32 @@ void readEntry(int argc, char **argv) {
         Point p0 = Point();
         Point::swap(points[0], points[min]);
         p0 = points[0];
-        convexHull.drawConvexHull(jarvisStackDrawConvexHull, p0);
+        convexHull.drawConvexHull(jarvisStackDrawConvexHull, points, size, p0);
     }
-
-    getrusage(RUSAGE_SELF, &start); // Inicio do processo atual da análise do scan de Graham com InsertionSort
-    stack = graham.grahamScanWithInsertionSort(points, size);
-    getrusage(RUSAGE_SELF, &end); // Fim do processo atual da análise do scan de Graham com InsertionSort
-    cout << "GRAHAM + INSERTIONSORT: " << userTime(&start, &end) << endl;
-    stack.clearStack();
 
     getrusage(RUSAGE_SELF, &start); // Inicio do processo atual da análise do scan de Graham com Mergesort
     stack = graham.grahamScanWithMergesort(points, size);
     getrusage(RUSAGE_SELF, &end); // Fim do processo atual da análise do scan de Graham com Mergesort
-    cout << "GRAHAM + MERGESORT: " << userTime(&start, &end) << endl;
+    printf("GRAHAM + MERGESORT: %.3fs\n", userTime(&start, &end));
+    stack.clearStack();
+
+    getrusage(RUSAGE_SELF, &start); // Inicio do processo atual da análise do scan de Graham com InsertionSort
+    stack = graham.grahamScanWithInsertionSort(points, size);
+    getrusage(RUSAGE_SELF, &end); // Fim do processo atual da análise do scan de Graham com InsertionSort
+    printf("GRAHAM + INSERTIONSORT: %.3fs\n", userTime(&start, &end));
     stack.clearStack();
 
     getrusage(RUSAGE_SELF, &start); // Inicio do processo atual da análise do scan de Graham com InsertionSort
     stack = graham.grahamScanWithBucketSort(points, size);
     getrusage(RUSAGE_SELF, &end); // Fim do processo atual da análise do scan de Graham com InsertionSort
-    cout << "GRAHAM + LINEAR (BucketSort): " << userTime(&start, &end) << endl;
+    printf("GRAHAM + LINEAR (BucketSort): %.3fs\n", userTime(&start, &end));
     stack.clearStack();
 
     getrusage(RUSAGE_SELF, &start); // Inicio do processo atual da análise do marchar de Jarvis
     stack = jarvis.jarvisMarch(points, size);
     getrusage(RUSAGE_SELF, &end); // Fim do processo atual da análise do marchar de Jarvis
-    cout << "JARVIS: " << userTime(&start, &end) << endl;
-    //stack.clearStack();
+    printf("JARVIS: %.3fs\n", userTime(&start, &end));
+    stack.clearStack();
 
     file.close();
 }

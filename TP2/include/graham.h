@@ -33,7 +33,7 @@ class Graham {
          * @param p0 
          * @return * Stack 
          */
-        Stack grahamScan(Point *points, int n, Point p0);
+        Stack grahamScan(Point *points, int size, Point p0);
 
         /**
          * @brief Algoritmo Scan de Graham utilizando o Mergesort como ordenação dos pontos, antes de determinar o fecho convexo.
@@ -42,7 +42,7 @@ class Graham {
          * @param n 
          * @return * Stack 
          */
-        Stack grahamScanWithMergesort(Point *points, int n);
+        Stack grahamScanWithMergesort(Point *points, int size);
 
         /**
          * @brief Algoritmo Scan de Graham utilizando o InsertionSort como ordenação dos pontos, antes de determinar o fecho convexo.
@@ -51,7 +51,7 @@ class Graham {
          * @param n 
          * @return * Stack 
          */
-        Stack grahamScanWithInsertionSort(Point *points, int n);
+        Stack grahamScanWithInsertionSort(Point *points, int size);
 
         /**
          * @brief Algoritmo Scan de Graham utilizando o BucketSort como ordenação dos pontos, antes de determinar o fecho convexo.
@@ -60,7 +60,7 @@ class Graham {
          * @param n 
          * @return * Stack 
          */
-        Stack grahamScanWithBucketSort(Point *points, int n);
+        Stack grahamScanWithBucketSort(Point *points, int size);
 
         /**
          * @brief Encontra o indice do ponto que possui a menor coordenada y, se houver empate compara a coordenada x.
@@ -69,7 +69,7 @@ class Graham {
          * @param n 
          * @return * int 
          */
-        int getMostBottomIndex(Point *points, int n);
+        int getMostBottomIndex(Point *points, int size);
 };
 
 #endif

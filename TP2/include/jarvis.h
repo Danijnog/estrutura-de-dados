@@ -27,7 +27,7 @@ class Jarvis {
          * @param n 
          * @return * Stack 
          */
-        Stack jarvisMarch(Point *points, int n);
+        Stack jarvisMarch(Point *points, int size);
 
         /**
          * @brief Encontra o índice do ponto que está mais a esquerda em relação ao eixo x.
@@ -36,7 +36,7 @@ class Jarvis {
          * @param n 
          * @return * int 
          */
-        int getMostLeftIndex(Point *points, int n);
+        int getMostLeftIndex(Point *points, int size);
 };
 
 
