@@ -22,9 +22,15 @@ class Sort {
     public:
 
     /**
-     * @brief construtor padrão da Classe
+     * @brief Construtor padrão da Classe.
      */
     Sort();
+
+    /**
+     * @brief Destrutor padrão da Classe.
+     * 
+     */
+    ~Sort();
     
     /**
      * @brief Divide recursivamente o conjunto de dados até que cada subconjunto possua 1 elemento.
