@@ -44,7 +44,7 @@ void readEntry(int argc, char **argv) {
         throw erroAoAbrirArquivo();
     
     int size = 0;
-    char line[1000];
+    char line[10000];
     while(file.getline(line, 10000)) // Le cada linha do arquivo até o final
     {
         int x, y;
