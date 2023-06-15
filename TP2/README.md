@@ -1,4 +1,4 @@
-## Descrição
+## 📌 Descrição
 O seguinte programa tem por objetivo determinar o Fecho Convexo de um conjunto
 de pontos passado como entrada do programa utilizando os algoritmos Scan de
 Graham e o Marchar de Jarvis. O fecho convexo, por definição, dado uma entrada
@@ -29,7 +29,7 @@ Atualmente na pasta do programa, já existe um arquivo de entrada nomeado
 
 
 
-# Exemplo do desenho do fecho convexo de um conjunto de pontos:
+### Exemplo do desenho do fecho convexo de um conjunto de pontos:
 ![Captura de Tela (219)](https://github.com/Danijnog/estrutura-de-dados/assets/97178655/9d443826-70a8-4d8b-ae96-ed03a2812d7d)
 
 
