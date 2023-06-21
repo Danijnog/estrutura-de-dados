@@ -1,0 +1,86 @@
+Aula Prática 10 - Relatório
+
+1. Inicialmente, o conjunto de experimentos para os valores de m e a CARGA serão:
+m: 10       m: 20        m: 100         m: 1000           m: 5000        m: 5000
+carga: 100  carga: 10    carga: 50      carga: 1000       carga: 500     carga: 10000
+
+2. O plano de experimentos exercita o compromisso entre os parâmetros já que executa vários testes com diferentes valores e proporções de m e a carga, podendo avaliar quais parâmetros das duas variáveis se encaixam melhor e torna a árvore B mais otimizada e rápida para inserção e remoção de elementos.
+
+3. Analisando o PRIMEIRO valor definido para m e carga:
+m = 10, carga = 100.
+O tempo de execução de inserção, pesquisa e retirada continuou sendo muito pequeno proximo de 0, pensando que estamos trabalhando com pontos flutuantes de até 7 casas decimais.
+O valor continuou sendo 0.0000000.
+GPROF:
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00    10000     0.00     0.00  difTempoUsuario
+  0.00      0.00     0.00     4006     0.00     0.00  Pesquisa
+  0.00      0.00     0.00     3068     0.00     0.00  Ret
+  0.00      0.00     0.00     3068     0.00     0.00  Retira
+  0.00      0.00     0.00     2926     0.00     0.00  Ins
+  0.00      0.00     0.00     2926     0.00     0.00  Insere
+  0.00      0.00     0.00     2907     0.00     0.00  InsereNaPagina
+  0.00      0.00     0.00      154     0.00     0.00  Reconstitui
+  0.00      0.00     0.00       65     0.00     0.00  Antecessor
+  0.00      0.00     0.00        1     0.00     0.00  Inicializa
+
+Analisando o SEGUNDO valor definido para m e carga:
+m = 20, carga = 10.
+O tempo de execução de inserção, pesquisa e retirada continuou igual antes, mantendo próximo de valores 0.0000000
+GPROF:
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00    10000     0.00     0.00  difTempoUsuario
+  0.00      0.00     0.00     4006     0.00     0.00  Pesquisa
+  0.00      0.00     0.00     3309     0.00     0.00  InsereNaPagina
+  0.00      0.00     0.00     3068     0.00     0.00  Ret
+  0.00      0.00     0.00     3068     0.00     0.00  Retira
+  0.00      0.00     0.00     2926     0.00     0.00  Ins
+  0.00      0.00     0.00     2926     0.00     0.00  Insere
+  0.00      0.00     0.00      137     0.00     0.00  Reconstitui
+  0.00      0.00     0.00       34     0.00     0.00  Antecessor
+  0.00      0.00     0.00        1     0.00     0.00  Inicializa
+
+
+Analisando o TERCEIRO valor definido para m e carga:
+m = 100, carga = 50.
+Nesse momento, o tempo de inserção, pesquisa e retirada aumentaram significativamente em todas as chamadas, permanecendo entre 0.0000030 e 0.0000000.
+GPROF:
+ %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00    10000     0.00     0.00  difTempoUsuario
+  0.00      0.00     0.00     4006     0.00     0.00  Pesquisa
+  0.00      0.00     0.00     3068     0.00     0.00  Ret
+  0.00      0.00     0.00     3068     0.00     0.00  Retira
+  0.00      0.00     0.00     2926     0.00     0.00  Ins
+  0.00      0.00     0.00     2926     0.00     0.00  Insere
+  0.00      0.00     0.00     1489     0.00     0.00  InsereNaPagina
+  0.00      0.00     0.00        1     0.00     0.00  Inicializa
+
+Analisando o QUARTO valor definido para m e carga:
+m = 1000, carga = 1000.
+Nesse ponto, o tempo de inserção, pesquisa e retirada mantiveram em 0.0000000.
+GPROF:
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00    10000     0.00     0.00  difTempoUsuario
+  0.00      0.00     0.00     4006     0.00     0.00  Pesquisa
+  0.00      0.00     0.00     3068     0.00     0.00  Ret
+  0.00      0.00     0.00     3068     0.00     0.00  Retira
+  0.00      0.00     0.00     2926     0.00     0.00  Ins
+  0.00      0.00     0.00     2926     0.00     0.00  Insere
+  0.00      0.00     0.00     1489     0.00     0.00  InsereNaPagina
+  0.00      0.00     0.00        1     0.00     0.00  Inicializa
+
+Analisando o QUINTO valor definido para m e carga:
+m = 5000, carga = 500.
+Com esses valores não foi possível realizar a análise pois deu erro de segmentation fault devido ao tamanho do m.
+
+Analisando o SEXTO valor definido para m e carga:
+m = 5000, carga = 10000.
+Com esses valores não foi possível realizar a análise pois também deu erro de segmentation fault devido ao tamanho do m e da carga.
+
+CONCLUSÃO:
+Com isso, pensando em otimizar a ordenação, inserção e remoção na árvore B verificamos que não podemos aumentar significativamente o valor de "m" sem levar em conta a carga, e também a proporção entre os dois. Com valores muito grandes de "m", ocorre erros de segmentation fault que tentamos acessar posição inválida da memória.
+
+É necessário aumentar um pouco o valor de "m" sim visando a otimização, porém temos que tomar cuidado com a proporção da carga e para não estourar a memória do programa também.
