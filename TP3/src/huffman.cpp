@@ -1,6 +1,5 @@
 #include "huffman.h"
 #include "tabelaFrequencia.h"
-#include <cstddef>
 
 List::List() {
     inicio = nullptr;
@@ -52,8 +51,8 @@ void List::fillList(unsigned int *table) {
                 novo->setCharacter(i); // O caracter do nó vai ser a posição i
                 novo->setFrequence(table[i]); // A frequência do nó vai ser a frequência que está na posição i da tabela
                 novo->setProximo(nullptr);
-                novo->setLeft(nullptr);
-                novo->setRight(nullptr);
+                novo->setLeftNo(nullptr);
+                novo->setRightNo(nullptr);
 
                 sortedInsert(novo);
             }
@@ -96,7 +95,7 @@ No *List::buildTree() {
     {
         primeiro = popFromList();
         segundo = popFromList();
-        novo = new No();
+        novo = (No*) malloc(sizeof(No)); // Cast the pointer to No*
 
         if(novo)
         {
@@ -104,8 +103,8 @@ No *List::buildTree() {
             int somaFrequencia = primeiro->getFrequence() + segundo->getFrequence();
             novo->setFrequence(somaFrequencia); // Frequencia do novo nó
 
-            novo->setLeft(primeiro); // O nó da esquerda aponta pro primeiro nó que foi removido
-            novo->setRight(segundo); // O nó da direita aponta pro segundo nó que foi removido
+            novo->setLeftNo(primeiro); // O nó da esquerda aponta pro primeiro nó que foi removido
+            novo->setRightNo(segundo); // O nó da direita aponta pro segundo nó que foi removido
             novo->setProximo(NULL);
 
             sortedInsert(novo); // Insere o novo nó na lista
@@ -119,12 +118,12 @@ No *List::buildTree() {
 
 void List::printTree(No *raiz, int size) {
     // Na árvore de huffman vamos imprimir somente os nós folhas
-    if(raiz->getLeft() == NULL && raiz->getRight() == NULL)
+    if(raiz->getLeftNo() == NULL && raiz->getRightNo() == NULL)
         cout << "\tFolha: " << raiz->getCharacter() << " " << "Altura: " << size << endl;
     
     else
     {
-        printTree(raiz->getLeft(), size + 1);
-        printTree(raiz->getRight(), size + 1);
+        printTree(raiz->getLeftNo(), size + 1);
+        printTree(raiz->getRightNo(), size + 1);
     }
 }

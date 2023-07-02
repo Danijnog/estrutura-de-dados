@@ -14,11 +14,11 @@ No *No::getProximo() {
     return proximo;
 }
 
-No *No::getLeft() {
+No *No::getLeftNo() {
     return left;
 }
 
-No *No::getRight() {
+No *No::getRightNo() {
     return right;
 }
 
@@ -34,11 +34,11 @@ void No::setCharacter(unsigned char c) {
     this->character = c;
 }
 
-void No::setLeft(No *no) {
+void No::setLeftNo(No *no) {
     this->left = no;
 }
 
-void No::setRight(No *no) {
+void No::setRightNo(No *no) {
     this->right = no;
 }
 
@@ -50,8 +50,8 @@ int No::treeHeight(No *raiz) {
     
     else
     {
-        left = treeHeight(raiz->getLeft()) + 1;
-        right = treeHeight(raiz->getRight()) + 1;
+        left = treeHeight(raiz->getLeftNo()) + 1;
+        right = treeHeight(raiz->getRightNo()) + 1;
 
         if(left > right)
             return left;
