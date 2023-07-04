@@ -1,5 +1,5 @@
-#include "dicionario.h"
-#include "tabelaFrequencia.h"
+#include "dictionary.h"
+#include "frequenceTable.h"
 
 Dictionary::Dictionary() {}
 
@@ -16,12 +16,12 @@ char **Dictionary::alocateDictionary(int columns) {
     return dictionary;
 }
 
-void Dictionary::buildDictionary(char **dictionary, No *raiz, char *path, int columns) {
+void Dictionary::buildDictionary(char **dictionary, No *root, char *path, int columns) {
     char left[columns], right[columns];
 
     // Checar se estamos em uma folha
-    if(raiz->getLeftNo() == nullptr && raiz->getRightNo() == nullptr)
-        strcpy(dictionary[raiz->getCharacter()], path);
+    if(root->getLeftNo() == nullptr && root->getRightNo() == nullptr)
+        strcpy(dictionary[root->getCharacter()], path);
 
     else
     {
@@ -32,8 +32,8 @@ void Dictionary::buildDictionary(char **dictionary, No *raiz, char *path, int co
         strcat(left, "0"); // Concatena a string left com 0
         strcat(right, "1"); // Concatena a string right com 1
 
-        buildDictionary(dictionary, raiz->getLeftNo(), left, columns);
-        buildDictionary(dictionary, raiz->getRightNo(), right, columns);
+        buildDictionary(dictionary, root->getLeftNo(), left, columns);
+        buildDictionary(dictionary, root->getRightNo(), right, columns);
     }
 }
 
@@ -64,15 +64,15 @@ char *Dictionary::encode(char **dictionary, unsigned char *text) {
     return code;
 }
 
-char *Dictionary::decode(No *raiz, unsigned char *text) {
-    No *aux = raiz;
+char *Dictionary::decode(No *root, unsigned char *encodeText) {
+    No *aux = root;
     char temp[2]; // Temp é utilizado para transformar um caracter em uma string para usar a função strcat
 
-    char *decodeText = (char*)calloc(strlen((char*)(text)), sizeof(char));
+    char *decodeText = (char*)calloc(strlen((char*)(encodeText)), sizeof(char));
 
-    for(int i = 0; text[i] != '\0'; i++)
+    for(int i = 0; encodeText[i] != '\0'; i++)
     {
-        if(text[i] == '0')
+        if(encodeText[i] == '0')
             aux = aux->getLeftNo();
         
         else // Se o valor na posição i do texto for == 1
@@ -84,7 +84,7 @@ char *Dictionary::decode(No *raiz, unsigned char *text) {
             temp[1] = '\0';
             strcat(decodeText, temp);
 
-            aux = raiz;
+            aux = root;
         }
     }
     return decodeText;

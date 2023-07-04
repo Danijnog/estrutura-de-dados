@@ -15,4 +15,12 @@ class entradaInvalida : public exception {
         }
 };
 
+class fileNotFoundOnEntry : public exception {
+    public:
+        const char *what() const throw()
+        {
+            return "Não foi possível abrir o arquivo desejado! Arquivo onde ocorreu o erro: entry.cpp";
+        }
+};
+
 #endif

@@ -34,8 +34,6 @@ void Compress::compress(unsigned char *str, char *filename) {
 
     if(j != 7) // Bytes pela metade
         fwrite(&byte, sizeof(byte), 1, file);
-    
-    // fclose(file);
 }
 
 unsigned int Compress::isBit1(unsigned char byte, int pos) {
@@ -44,12 +42,12 @@ unsigned int Compress::isBit1(unsigned char byte, int pos) {
     return byte & aux; // Retorna o resultado entre a operação and entre 'byte' e 'aux' em 'pos'
 }
 
-void Compress::decompress(No *raiz, char *compactedFilename, char *outputFilename) {
+void Compress::decompress(No *root, char *compactedFilename, char *outputFilename) {
     FILE *file = fopen(compactedFilename, "rb");
     FILE *outputFile = fopen(outputFilename, "w");
     unsigned char byte;
 
-    No *aux = raiz;
+    No *aux = root;
 
     if(file == nullptr)
         throw "Não foi possível abrir o arquivo na descompactação! Método: decompress() da classe Compress.";
@@ -66,9 +64,8 @@ void Compress::decompress(No *raiz, char *compactedFilename, char *outputFilenam
             if(aux->getLeftNo() == nullptr && aux->getRightNo() == nullptr)
             {
                 fputc(aux->getCharacter(), outputFile);
-                aux = raiz;
+                aux = root;
             }
         }
     }
 }
-

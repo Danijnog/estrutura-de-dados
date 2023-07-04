@@ -1,9 +1,1364 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis lacus sit amet placerat varius. Aliquam erat volutpat. Proin ullamcorper eros tellus. In volutpat posuere leo in venenatis. Nam maximus, tellus id rhoncus volutpat, eros nulla aliquet leo, vitae sodales magna leo a enim. Aenean nisl lorem, venenatis a libero nec, pretium pretium erat. Nunc elementum lacus in lacus congue, sed porttitor eros semper. Nunc vitae quam sed eros feugiat molestie. Aenean et placerat elit. Vestibulum tristique lacinia erat, eget dignissim urna elementum sed.
-
-Integer euismod, leo at porttitor sagittis, justo ex ultricies sem, nec tincidunt lectus nisl vitae sapien. Morbi ac blandit metus. Praesent dictum convallis feugiat. Curabitur porttitor augue malesuada odio lobortis mollis. Vivamus feugiat, ligula quis laoreet mattis, elit nisl varius nulla, quis suscipit velit eros vitae tortor. Proin tempus posuere purus vitae lacinia. In vehicula ligula vitae iaculis aliquet. Phasellus at ipsum sit amet elit placerat luctus. Mauris vel massa hendrerit, efficitur est vel, cursus nisl. Curabitur placerat mi et felis consequat tincidunt. Nunc fermentum tellus at efficitur iaculis. Curabitur sollicitudin, justo a pharetra dictum, nibh dui malesuada ipsum, id ullamcorper urna risus non ipsum. Vestibulum elementum molestie erat, id tempor augue viverra maximus. Nulla elementum pretium odio vel auctor. Vivamus non turpis ac lorem maximus imperdiet.
-
-Fusce est nisl, efficitur vitae scelerisque sed, accumsan quis felis. Vivamus aliquam orci a consectetur vestibulum. Integer tortor ipsum, rutrum nec odio a, tristique volutpat tellus. Aliquam et sem massa. Sed a maximus sem. Suspendisse interdum elementum dignissim. Integer suscipit quam ac nunc rhoncus ullamcorper. Nulla interdum convallis posuere. Proin bibendum facilisis urna eu ultricies. Quisque vestibulum, diam sed fermentum pulvinar, purus quam gravida nibh, vel dapibus dui massa in libero.
-
-Phasellus eleifend ex arcu. Sed et odio nisi. Quisque convallis lectus at hendrerit suscipit. Nulla vulputate, leo et luctus finibus, eros felis mollis quam, sit amet commodo odio dui eget lectus. Integer quis elit sed elit ultrices vulputate. Nam consectetur venenatis urna eu dictum. Etiam non ornare nibh, id rhoncus est. Donec aliquet, dui ac varius congue, ex lorem vehicula ex, sed sodales sapien tellus ac ligula. Nulla nec turpis non arcu porta posuere sit amet ac augue. Suspendisse lectus velit, mattis et viverra nec, iaculis eu est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ac velit turpis. Etiam laoreet vulputate ornare. Curabitur interdum pellentesque aliquam. Sed porta justo eu magna ullamcorper efficitur.
-
-Ut mi ipsum, dictum eget nibh non, lacinia commodo dui. In accumsan, mauris eu condimentum scelerisque, lectus erat viverra orci, et luctus erat quam sit amet nulla. Mauris fringilla sollicitudin nibh, sed fringilla sem blandit vel. Integer consectetur finibus lectus, pulvinar tristique libero sagittis accumsan. Ut a commodo lectus, nec fringilla quam. Suspendisse potenti. Fusce gravida metus at leo malesuada, ut consequat risus auctor. Vivamus eu turpis nisl. Phasellus feugiat lorem id sapien lobortis euismod. Aenean porttitor turpis euismod ante pretium suscipit. Aenean fringilla tempor erat a vulputate. In hac habitasse platea dictumst.
+No princípio, havia apenas um cérebro de primata. E de suas
+profundezas, graças às misteriosas tempestades
+eletromagnéticas – originárias de um emaranhado de dezenas
+de bilhões de neurônios moldado por uma tão inédita quanto
+única caminhada evolucionária –, a mente humana emergiu.
+Ilimitada, irrestrita, imensa. Envolto em uma interminável
+combustão e expansão, esse novo tipo de plasma neural,
+nunca antes visto no universo, logo se fundiu em um
+contínuo. Dessa amálgama surgiu o andar ereto, a destreza
+manual, a linguagem oral, a escrita, a capacidade de formar
+enormes entrelaçamentos sociais, o pensamento abstrato, as
+mais variadas ferramentas e tecnologias, a introspecção, a
+consciência e, enfim, o livre-arbítrio. Desse mesmo caldeirão
+mental eclodiu também a mais concreta definição de espaçotempo já concebida por qualquer matéria orgânica. E, então,
+do bojo desse perfeito arcabouço, foi possível gerar um
+verdadeiro dilúvio de abstrações mentais que, quando
+projetado em direção ao universo que nos cerca, deu origem
+às verdadeiras tábuas sagradas da condição humana. Prova
+disso é que, tão logo foram enunciadas, essas abstrações
+começaram a ditar a essência e o fulcro de todas as
+civilizações: do nosso egoístico senso de ser às nossas mais
+preciosas crenças e mitos; dos mais sofisticados sistemas
+econômicos às mais convolutas estruturas políticas; das mais
+exuberantes obras de arte às mais perenes edificações, que
+incluíram a mais completa reconstrução científica de tudo o
+que circunda a todos nós. Foi assim, então, que do meio
+dessas tempestades eletromagnéticas neurais, surgiu o
+magnífico escultor da realidade, o virtuoso compositor e
+mestre arquiteto da nossa tão trágica, mas, ainda assim, tão
+heroica trajetória; o curioso explorador da natureza, o
+incansável perseguidor de suas próprias origens; o mestre
+ilusionista, o místico de muitas crenças, o artista de muitos
+talentos; o poeta lírico que compôs, com suas inigualáveis
+rimas sinápticas, cada pensamento, cada grunhido, cada
+registro falado, cantado ou escrito, cada mito, cada pintura
+rupestre, cada deus, cada teorema matemático, cada viagem
+ao desconhecido, cada genocídio; todas as conquistas, assim
+como todos os fracassos; cada gesto de amor, cada sonho,
+cada alucinação; cada sensação e cada sentimento, concebido
+ou experimentado, por todo e qualquer hominídeo que um dia
+vagou pela superfície da esfera azul que o Verdadeiro Criador
+de Tudo decidiu chamar de Terra.
+O Verdadeiro Criador de Tudo é uma estória sobre as criações do
+cérebro humano e a posição central que ele deveria ocupar na
+cosmologia do universo. A minha definição desse universo
+humano inclui a imensa coleção de conhecimento,
+percepções, crenças, pontos de vista, teorias científicas e
+filosóficas, culturas, tradições morais e éticas, realizações
+físicas e intelectuais, tecnologias, obras de arte e todos os
+outros produtos mentais emanados do cérebro humano.
+Em resumo, o universo humano inclui tudo aquilo que
+define, para o bem e para o mal, o nosso legado como espécie.
+Este, porém, não é um livro de história nem um compêndio
+detalhado daquilo que a neurociência moderna sabe, ou pensa
+que sabe, sobre como o cérebro humano realiza seus
+múltiplos trabalhos. Pelo contrário, trata-se de um livro
+científico que tem como objetivo central apresentar o cérebro
+humano dentro de um novo sistema referencial capaz de
+gerar uma agenda humanística inédita. Inicialmente, esta
+obra introduz os detalhes de uma teoria que visa a descrever
+como o cérebro, trabalhando isoladamente ou enquanto parte
+de grandes redes formadas por outros cérebros, executa os
+seus magníficos feitos. Para esse novo arcabouço teórico,
+atribuí o nome de Teoria do Cérebro Relativístico (TCR).
+Quando comecei a planejar este livro, tentei construir o
+argumento central focando no campo do conhecimento
+científico no qual militei durante os últimos trinta e sete
+anos: a neurociência. Porém, logo me dei conta de que seria
+uma escolha muito restrita para realizar a ambiciosa missão
+que me dispus a cumprir com o projeto. Longe disso, ficou
+claro que o que eu de fato precisava fazer era ampliar
+consideravelmente o escopo da minha aventura intelectual e
+cair de cabeça, sem medo, na exploração de áreas do
+conhecimento que a vasta maioria dos neurocientistas
+contemporâneos jamais se atreveria a visitar. Assim, de
+repente, eu me encontrei vasculhando livros clássicos de
+filosofia, história da arte, arqueologia, paleontologia, história
+dos sistemas computacionais, história da matemática, da
+física, da mecânica quântica, tratados de linguística e ciências
+cognitivas, robótica, cosmologia e até volumes de história das
+grandes civilizações humanas da Antiguidade.
+Após meses de leituras, as mais diversas possíveis, e de
+uma crescente frustração pela dificuldade de encontrar o
+proverbial “fio da meada” da minha narrativa, eu me deparei,
+quase por acidente, com o glorioso livro A história da arte, do
+renomado historiador anglo-germânico Ernst H. Gombrich.
+Tudo havia acontecido muito rapidamente. Preocupada com o
+meu grave caso de “bloqueio de escritor”
+, minha mãe, uma
+novelista bem mais renomada e experiente que eu, havia me
+presenteado, na véspera de Natal de 2015, com a edição de
+bolso desse clássico. Chegando em casa, na madrugada do dia
+de Natal, sem saber muito bem o porquê, resolvi folheá-lo em
+busca de algum sono. Todavia, bastaram alguns segundos, o
+suficiente para que meus olhos varressem apenas as
+primeiras sentenças do primeiro parágrafo da introdução de
+Gombrich, para, de súbito, eu sentir que a minha busca havia
+finalmente terminado. Ali, bem na minha frente, impresso no
+mais refinado papel e escrito em tinta negra, o fio da meada
+me esperava ansioso. Pelas horas seguintes, sem pausa nem
+para o tradicional almoço de Natal familiar, não consegui
+deixar aquele livro em paz.
+Estas foram as primeiras sentenças de Gombrich que
+definiram o meu rumo:
+De fato, aquilo a que chamamos de Arte não existe. Existem
+apenas artistas. No passado, eram homens que usavam terra
+colorida para esboçar silhuetas de bisões em paredes de
+cavernas; hoje alguns compram suas tintas e criam cartazes
+para colar em tapumes: eles fizeram e fazem muitas coisas.
+Inesperadamente, eu havia achado um aliado, alguém que
+claramente podia ver que, sem um cérebro humano, moldado
+e refinado por um processo evolutivo, tão extremamente
+particular quanto irreproduzível, não existiria algo conhecido
+por nós todos como arte. Isso se deve ao fato de que todas as
+nossas manifestações artísticas, e as de todos os nossos
+antepassados, nada mais são do que produtos da incansável e
+inquisitiva mente humana, ansiosa por projetar para o mundo
+exterior as imagens mentais criadas nos confins do nosso
+cosmos neuronal interior.
+A princípio, essa observação pode soar como um detalhe
+irrelevante, mera desculpa semântica, sem grande relevância
+ou maior impacto sobre a forma como nós costumeiramente
+vemos e conduzimos a vida. Todavia, o simples ato de, de
+repente, colocar o cérebro humano no centro do nosso
+universo tem implicações profundas não só na forma de se
+interpretar o passado da humanidade, como de reconhecer o
+nosso viver presente, bem como decidir que tipo de futuro
+queremos para nós e para os nossos descendentes. Nesse
+contexto, com pequenas modificações de termos e palavras,
+as primeiras sentenças do livro de Gombrich poderiam servir
+de abertura para um sem-número de tratados descrevendo os
+mais variados produtos da mente humana – por exemplo, um
+livro sobre física. As teorias propostas pela física foram tão
+bem-sucedidas em descrever infindáveis fenômenos do
+universo que nos cerca, em múltiplas escalas espaciais, que a
+maioria de nós, incluindo os cientistas profissionais que
+trabalham diariamente e por décadas a fio nessa área, tende a
+se esquecer da verdadeira origem de conceitos fundamentais,
+como massa e carga, e o que eles realmente significam. Como
+o meu grande amigo Marcelo Gleiser, eminente físico teórico
+brasileiro, professor há muitos anos da Universidade
+Dartmouth, escreveu no seu maravilhoso livro A ilha do
+conhecimento: “Massa e carga não existem por si mesmas;
+elas somente existem como parte da narrativa que nós, seres
+humanos, construímos para descrever o mundo natural”.
+Sem que nenhum de nós dois desconfiasse, tanto Marcelo
+quanto eu concebemos a mesma representação daquilo que o
+universo humano significa. Dentro dessa visão, se outra
+forma de vida inteligente, por exemplo, o sr. Spock, de
+Jornada nas Estrelas, chegasse realmente à Terra, advindo do
+seu planeta Vulcano, e, por algum milagre, fosse capaz de se
+comunicar com eficiência conosco, nós provavelmente
+descobriríamos que as suas explicações e as suas teorias
+científicas, sem mencionar os seus conceitos básicos e
+representações mentais, usados para descrever a visão
+cosmológica de sua espécie para o universo, seriam
+diametralmente distintos dos nossos (Figura 1.1). Por que nós,
+em algum momento, deveríamos esperar algo diferente disso?
+Afinal, o cérebro de Spock provavelmente seria diferente do
+nosso, uma vez que teria sido formado por um processo
+evolucionário, bem como uma história cultural, ocorrida em
+Vulcano, não na Terra. Assim, Spock estaria nos descrevendo
+o universo Vulcano, não o humano.
+Figura 1.1 A Cosmologia Cerebrocêntrica: a descrição do universo pelo cérebro humano
+– neste caso por meio do uso da matemática – provavelmente seria diferente daquela
+criada por um sistema nervoso alienígena. (Ilustração por Custódio Rosa)
+Do ponto de vista que pretendo desenvolver neste livro,
+nenhuma das duas teorias cosmológicas – a nossa e a do sr.
+Spock – poderia ser considerada mais correta que a outra;
+elas simplesmente representariam a melhor aproximação que
+Antes que você, leitor, comece a desconfiar de que alguém
+deve ter adicionado algo estranho no suco de maracujá que
+neurocientistas e físicos brasileiros tomam quando crescem
+em São Paulo ou no Rio de Janeiro, permita-me esclarecer o
+meu ponto de vista. Na maioria das vezes, todos nós nos
+referimos, digamos, à física como se esse campo da ciência
+fosse um tipo de entidade universal, com vida própria, como a
+Arte com “A” maiúsculo a que Gombrich se referiu em seu
+livro. Contudo, a Física existe tanto quanto a Arte. Ou seja, o
+que realmente existe é uma coleção de construções e
+abstrações mentais gerada pelo cérebro humano e que oferece
+a melhor e mais acurada descrição – pelo menos até o
+presente – do mundo natural existente ao nosso redor. Assim,
+a física – como a matemática ou qualquer outra coletânea de
+conhecimento científico – é definida pelas reverberações e
+pelos ecos das tempestades eletromagnéticas neuronais que
+um dia percorreram os vales e picos corticais do cérebro
+visionário de pessoas como Ptolomeu, Diofanto, Karamzin,
+Omar Kayan, Ibn Sina, Al-Biruni, Euclides, Galeno, Copérnico,
+Kepler, Galileu, Newton, Maxwell, Bohr, Curie, Rutherford,
+Einstein, Heisenberg, Schrödinger, Stueckelberg, entre tantas
+outras.
+Da mesma forma, a definição de Arte oferecida por
+Gombrich compreende uma coleção deslumbrante de imagens
+mentais que, ao longo das muitas dezenas de milhares de
+anos que nos separam dos neandertais, foi transmitida ao
+mundo por meio de decorações corporais, tatuagens, painéis
+rupestres, esculturas, gravuras, pinturas, música, prosa e
+poesia, de forma a criar um registro, senão permanente, bem
+mais duradouro das memórias mais queridas ou sofridas, dos
+sentimentos e das emoções mais pungentes e profundos, dos
+medos e dos desejos, das visões de criação, da cosmologia
+dominante, das crenças arraigadas, das premonições, da
+história, dos mitos, do presente e do futuro, nos mais
+variados meios e mídias. Começando com a própria pele do
+corpo, passando a ossos, conchas, rochas, à madeira das mais
+diversas árvores, até invadir as paredes das cavernas
+subterrâneas, os mais diversos metais, rolos de papiro,
+pergaminhos, folhas de papel, os tetos e as janelas de capelas,
+igrejas, catedrais e templos, até se expandir mundo afora, por
+ondas eletromagnéticas, fotografias, filmes, fitas de vídeo,
+CDs, DVDs, microchips e memórias de silício, até ascender à
+“nuvem digital”… Essa imensa coleção de projeções de
+imagens mentais inclui os murais pintados nas paredes de
+pedra dos grandes templos do Paleolítico, as cavernas de
+Altamira e Lascaux e todos os Caravaggios, Vermeers,
+Botticellis, Donatellos, Michelangelos, Da Vincis, Rembrandts,
+Turners, Monets, Cézannes, Van Goghs, Gauguins e Picassos,
+só para nomear alguns dos grandes artistas que foram
+capazes de traduzir as suas mais intangíveis representações
+mentais em alegorias coloridas, que se transformaram em
+depoimentos íntimos e imortais sobre os mistérios da
+condição humana.
+Usando o mesmo raciocínio, a cada momento da história
+da humanidade, a mais abrangente descrição científica do
+universo representou, nada mais, nada menos, do que a
+expressão de uma elaborada abstração mental que usualmente
+recebeu o nome do seu proponente; ideias revolucionárias que
+impactaram milhões de mentes por séculos ou milênios,
+como: o sistema solar de Ptolomeu, a cosmologia
+heliocêntrica de Copérnico, as leis de movimento planetário
+de Kepler, a lei da gravidade de Newton, as equações de
+Maxwell (descrevendo o fenômeno do eletromagnetismo), a
+teoria especial e geral da relatividade de Einstein, o princípio
+da incerteza de Heisenberg, as equações de Schrödinger etc.
+Antes que qualquer físico pule da cadeira, é importante
+enfatizar que esse ponto de vista em nada diminui a
+espantosa intuição que possibilitou descobertas científicas
+geniais e revolucionárias ao longo dos séculos. Muito pelo
+contrário, essa visão adiciona ao distinto currículo de cada um
+desses pioneiros uma nova láurea: a de eles também serem,
+sem se darem conta, fabulosos neurocientistas; homens e
+mulheres capazes de mergulhar nos mais profundos mistérios
+da mente humana e de lá extrair, usando abstrações mentais,
+como a matemática e o raciocínio lógico, teorias que
+mudaram a nossa vida e a nossa visão do universo.
+Ironicamente, a vasta maioria desses cientistas nega com
+veemência que as propriedades neurofisiológicas de sua
+mente brilhante, sua consciência ou qualquer outra forma de
+subjetivismo humano desempenhem papel de relevância nas
+suas descobertas quase milagrosas. Ignoram, porém, que o
+simples ato de selecionar uma forma particular de
+matemática, ou lógica, para explicar um fenômeno natural,
+constitui prova cabal da interferência da sua subjetividade
+humana e individual no processo científico. Da mesma forma,
+quando físicos manifestam sua aprovação para uma solução
+matemática de um problema, em detrimento de alternativas
+possíveis, referindo-se à “naturalidade” das equações
+propostas como o principal critério de escolha, eles
+novamente produzem uma confissão irrefutável da influência
+da sua subjetividade no processo científico. Uma das
+consequências fundamentais desse ponto de vista é que a
+busca por uma “teoria de tudo”
+, um “Santo Graal” da física
+das últimas décadas, pode não passar de quimera, utopia
+matemática, impossível de ser alcançada sem a incorporação
+de uma teoria abrangente da mente humana. E ainda que a
+vasta maioria dos físicos contemporâneos refute qualquer
+noção de que os mecanismos intrínsecos do cérebro humano
+desempenhem papel relevante na formulação das suas
+teorias, uma vez que eles assumem que o seu trabalho como
+físicos seja puramente objetivo, espero mostrar ao longo deste
+livro que mesmo alguns dos mais enigmáticos e primordiais
+conceitos, como espaço e tempo, não podem ser totalmente
+compreendidos a menos que um observador humano – e o
+seu cérebro de primata – seja colocado em primeiro plano.
+A partir deste ponto, enfim me dei conta de que a minha
+meada começava a se desenrolar rapidamente.
+O Verdadeiro Criador de Tudo começa com uma descrição de
+como o cérebro de primata evoluiu desde que os nossos
+ancestrais divergiram dos chimpanzés e começaram a
+explorar as savanas do leste e do sul da África, por volta de
+seis milhões de anos atrás. A minha breve reconstrução dessa
+história evolucionária enfatiza as modificações morfológicas e
+funcionais, induzidas pelo processo de seleção natural, que
+levaram ao surgimento da moderna configuração do
+Verdadeiro Criador de Tudo. A seguir, introduzo uma noção
+fundamental para a minha tese central: uma nova definição
+operacional para o conceito de informação, que chamei de
+“informação gödeliana”
+, podendo ser manipulada por tecidos
+orgânicos e cérebros animais como o nosso. Essa discussão é
+seguida pela descrição de uma série de dez princípios
+fisiológicos fundamentais que regem a operação do cérebro
+humano. Foi com base nesses dez princípios, descobertos ao
+longo dos meus trinta e sete anos de pesquisas
+neurofisiológicas, que foi criada a Teoria do Cérebro
+Relativístico. Desses princípios, portanto, deriva a principal
+predição feita pela TCR: de que o cérebro humano sempre
+opera como um todo, de forma contínua; ou seja, em vez de
+usar uma localização espacial restrita do tecido neural para
+executar cada uma das suas atividades mentais, o Verdadeiro
+Criador de Tudo se vale do trabalho altamente sincronizado de
+múltiplas regiões cerebrais, distribuídas por todo o seu
+volume, para produzir cada uma das suas funções
+neurológicas e cada um dos nossos comportamentos.
+Depois desta introdução mais neurobiológica, detalho,
+primeiro, como o cérebro humano dedica a maior parte de sua
+existência construindo ou adaptando seus modelos neurais
+internos do mundo que nos cerca, definindo o que chamo de
+“ponto de vista do cérebro”. Assim, tudo o que um cérebro
+humano adulto faz requer uma consulta prévia a esse “ponto
+de vista”. Essa é a razão pela qual frequentemente digo aos
+meus alunos que nós enxergamos antes de olhar e ouvimos
+antes de escutar. Para perceber algo, a cada instante, o
+cérebro tem que confrontar o que o seu modelo interno do
+mundo prevê com o fluxo contínuo e multidimensional de
+múltiplos sinais sensoriais que, uma vez coletados na
+periferia do corpo por receptores especializados, são
+transmitidos para o sistema nervoso central, como forma de
+descrever o estado do mundo externo (e também as condições
+internas do corpo).
+Um ponto central desse argumento reside em um atributo
+vital do cérebro humano: a sua infindável capacidade de se
+autoadaptar. Essa propriedade, conhecida como plasticidade,
+permite que as principais células que formam os cérebros
+animais, os neurônios, alterem tanto as suas propriedades
+funcionais quanto a sua morfologia intrínseca e até a
+distribuição e a intensidade de suas sinapses, as conexões por
+eles estabelecidas com outros neurônios. Na realidade, mesmo
+as propriedades anatomofisiológicas das fibras neurais, que
+formam os nossos nervos e conectam neurônios localizados
+em diferentes regiões do cérebro, podem ser modificadas de
+forma significativa, ao longo da nossa vida, como
+consequência de mudanças nas nossas experiências
+sensoriais, motoras e cognitivas. No todo, isso significa que
+um cérebro de primata adulto, inclusive o nosso, é altamente
+influenciado por modificações ocorridas dentro e fora do
+nosso corpo. É por isso que nós, neurocientistas, acreditamos
+que o cérebro pode ser comparado a uma orquestra sinfônica,
+na qual a configuração física dos instrumentos – e,
+consequentemente, a sua sonoridade – é continuamente
+modificada por cada nota musical produzida por essa mesma
+filarmônica.
+Dando sequência ao meu argumento, um capítulo inteiro é
+dedicado à análise do imenso poder computacional do cérebro
+humano. Na realidade, o fato de que vastas redes neuronais
+podem recrutar dinamicamente dezenas de bilhões de
+unidades de processamento interconectadas e de que esses
+circuitos são altamente plásticos confere um incomparável e,
+como eu hei de argumentar ao longo deste volume,
+insuperável poder computacional ao cérebro humano. Esse
+atributo justifica o porquê de o Verdadeiro Criador de Tudo
+poder desfrutar de uma expressão quase ilimitada de
+criatividade, inteligência, intuição, discernimento e sabedoria
+que excedem, em muitas ordens de magnitude, a performance
+de qualquer computador digital ou qualquer outra máquina de
+Turing (a designação genérica de todos os sistemas digitais).
+Por essa simples razão, atribuo ao cérebro humano uma
+posição única enquanto sistema computacional ao designá-lo
+como um “computador orgânico”. Por definição, em contraste
+aos computadores digitais, nem a operação nem os produtos
+desse computador orgânico podem ser simulados ou
+reproduzidos por um algoritmo digital.
+Tendo introduzido o meu novo arcabouço neurobiológico e
+a definição de computadores orgânicos, o próximo passo é
+apresentar as novas evidências experimentais que revelam a
+requintada capacidade de animais e seres humanos
+estabelecerem verdadeiras redes cerebrais, formadas pela
+sincronização de um número elevado de cérebros individuais,
+aumentando ainda mais o poderio computacional orgânico de
+cada uma dessas espécies. Chamei essas redes cerebrais de
+Brainets e, em uma série de capítulos, defendo a teoria de que
+foram essenciais para o desenvolvimento e expansão do
+universo humano. Na realidade, a introdução do conceito das
+Brainets me permitiu explorar outra ideia inédita: uma visão
+cosmológica cerebrocêntrica do universo.
+Para entender esse novo paradigma epistêmico, primeiro
+ofereço uma definição mais operacional de como o cérebro
+gera abstrações mentais e crenças e de como esses dois
+subprodutos da mente humana podem ser usados para
+estabelecer uma nova referência para recontar o grande épico
+da humanidade, desde os tempos da sua pré-história,
+passando pela Grécia Antiga, pelos grandes impérios da Ásia e
+pela Renascença italiana e, finalmente, aportando no nosso
+mundo contemporâneo. De acordo com essa cosmologia
+cerebrocêntrica, conceitos primordiais para a descrição do
+universo humano, como espaço, tempo e o estabelecimento de
+relações de causa e efeito, derivam dos atributos
+neurofisiológicos do Verdadeiro Criador de Tudo. Por essa
+ótica, outro produto derivado do cérebro humano, a
+matemática, tornou-se uma das ferramentas intelectuais
+mais bem-sucedidas, ao longo do último meio milênio, na
+construção da mais completa e precisa descrição científica do
+universo de que se tem notícia. Em contraposição a essa
+conquista esplendorosa da mente humana, em outro capítulo,
+descrevo como o modus operandi das Brainets pode se
+transformar em uma arma fatal, capaz de desencadear
+tragédias humanas descomunais, como guerras e genocídios.
+Nesse mesmo capítulo, vou além e discorro sobre o fato de
+que, mesmo que cérebros humanos não operem como
+computadores digitais, isso não impede esses computadores
+orgânicos de serem programados por sinais externos. Muito
+pelo contrário! Nos dois capítulos finais deste livro, exponho
+os graves riscos que a humanidade enfrentará nos próximos
+anos, em decorrência da nossa interação e da nossa
+dependência cada vez maiores em relação aos sistemas
+digitais, estabelecendo uma verdadeira simbiose que pode
+afetar profundamente o cérebro, por meio do fenômeno da
+plasticidade neural. Basicamente, a convivência quase
+contínua com computadores pode afetar a forma como o
+cérebro funciona e, no limite, nos transformar em meros
+zumbis digitais orgânicos. De acordo com a minha estimativa,
+essa transformação pode ocorrer muito mais depressa do que
+imaginamos. Esse cenário se manifestará quão mais
+rapidamente o nosso cérebro for ludibriado, convencendo-se
+de que recompensas maiores seriam auferidas se ele cessasse
+de expressar os atributos mais celebrados e únicos da
+condição humana. Os atributos incluem a imensa criatividade
+e a intuição, a inteligência, bem como a compaixão, a empatia
+pelo próximo e a busca de um fim benéfico comum. Em troca,
+o cérebro optaria pela produção de comportamentos mais
+eficientes e produtivos, seguindo as rígidas normas impostas
+pela modernidade, que nos condenariam a uma existência
+primordialmente virtual onde – de acordo com a falsa utopia
+dominante dos nossos tempos – poderíamos nos defender
+melhor das frustrações e das dores cotidianas advindas do
+mundo real. Na verdade, esse seria o caminho mais rápido
+para nos transformarmos em simples autômatos totalmente
+controlados por um sistema político ditatorial e uma doutrina
+econômica divorciada da promoção do bem-estar.
+Reiterando, toda a história da humanidade pode ser
+recontada e analisada do ponto de vista das particulares
+abstrações mentais que dominaram cada uma das diferentes
+civilizações humanas, em diferentes momentos da existência.
+Dessa forma, eu não poderia deixar de concluir este livro sem
+lançar um alerta sobre a crescente e cega capitulação da
+presente civilização às duas das mais poderosas e perigosas
+abstrações mentais criadas pelo ser humano. Eu me refiro a
+elas como a Igreja do Mercado (com o seu deus do dinheiro) e
+o Culto da Máquina. No último capítulo, discorro sobre o
+tremendo poder de persuasão e influência, em todas as
+esferas de decisão da vida humana moderna, que ambas
+adquiririam ao se fundirem para dar à luz uma ideologia
+dominante do mundo em que vivemos. Junto com a revolução
+dos meios de comunicação humana – concretizados pela
+imensa magnificação do alcance das diferentes mídias de
+massa, como rádio, TV e, mais recentemente, internet, bem
+como o processo de globalização cultural gerado por essa
+expansão –, a convergência dessas duas abstrações mentais
+talvez esteja contribuindo de forma decisiva para resultados
+potencialmente devastadores para o futuro da humanidade.
+Em vez de nos unir em uma única civilização, como alardeiam
+muitos propagandistas, autointitulados “evangelistas
+digitais”
+, esse processo pode simplesmente nos condenar a
+retornar a um modo tribal de vida, caracterizado pela
+existência fraturada e alienada da realidade do mundo natural
+que criará muitos riscos e incertezas para o Verdadeiro
+Criador de Tudo.
+Em relação a todos os perigos potenciais a assolar o futuro
+dos habitantes do universo humano, só posso dizer, com toda
+honestidade – depois de três anos pesquisando e alinhavando,
+em narrativa única, inúmeros fragmentos de conhecimento,
+derivados de múltiplas disciplinas de atuação humana,
+necessários para escrever este livro –, que a minha visão
+sobre o Verdadeiro Criador de Tudo continua sendo de
+otimismo irrestrito e de profunda admiração. A razão para
+isso é bem simples. No verão de 2019, a idade do universo que
+existe ao nosso redor era estimada em 13,8 bilhões de anos.
+De acordo com a mais bem-aceita descrição humana dos
+eventos, meros quatrocentos mil anos depois da ocorrência do
+evento singular, conhecido como big bang, originário deste
+universo, a luz, pela primeira vez, foi capaz de escapar da
+sopa cósmica primitiva e começar uma viagem através do
+universo em busca de algo ou alguém capaz, não só de
+reconstruir essa épica jornada, mas também de conferir
+algum significado a ela. De forma totalmente inesperada, por
+um golpe do acaso, na superfície de um rochoso planeta azul,
+criado pela fusão de poeira intergaláctica, cerca de cinco
+bilhões de anos atrás, enquanto em órbita de um pequeno sol
+amarelo, perdido em uma esquina indistinguível de uma
+galáxia mediana, essa luz primordial finalmente encontrou
+seres que ansiavam por entendê-la e a todos os mistérios que
+ela carregava consigo. Tirando vantagem de todas as
+abstrações mentais e todas as tecnologias que eles foram
+capazes de criar, os membros dessa espécie iniciaram a árdua
+e longa tarefa, transmitida de geração em geração por
+milênios, de tentar reconstruir, dentro de sua mente, o
+caminho percorrido pelo fluxo de informação potencial e seu
+significado. As três visões cosmológicas ilustradas na Figura
+1.2 oferecem uma pequena amostra da enormidade do ato
+coletivo de criação humana. Seja ao olhar para a mais
+atualizada descrição do universo de acordo com a NASA, seja
+ao ver os afrescos renascentistas de Michelangelo ou os
+murais de pedra pintada das paredes da Capela Sistina da préhistória, a caverna Lascaux, não há como evitar sentir-se
+temporariamente quase sem ar; com os olhos marejados de
+puro êxtase; humildemente convencido e arrebatado pela
+emoção de constatar a magnificência e o esplendor de tudo
+aquilo que o nosso Verdadeiro Criador de Tudo realizou em
+tão pouco tempo.
+Figura 1.2 Três visões cosmológicas distintas criadas pelo Verdadeiro Criador de Tudo
+em diferentes momentos da história: O “Salão dos Touros” da caverna Lascaux, pintado
+pelos nossos ancestrais do Paleolítico Superior; os afrescos da Capela Sistina de
+Michelangelo; a mais recente descrição das origens do universo de acordo com a NASA.
+(Ilustração por Custódio Rosa)
+CAPÍTULO 2
+O VERDADEIRO CRIADOR DE TUDO ENTRA
+EM CENA
+Bastou ao bisão, alertado pelo assobiBastou ao bisão, alertado pelo assobio agudo vindo dos
+arbustos à frente, alçar subitamente a sua enorme cabeça
+negra das profundezas da grama colorida de orvalho para que
+o seu destino fosse definitivamente selado.
+Sem conseguir discernir detalhes da macabra cena que se
+desenrolava rapidamente a poucos metros de distância,
+devido à forte cerração que abraçava o vale nesse amanhecer,
+o poderoso touro foi logo dominado por um senso de terror
+paralisante quando, do nada, chamas crepitaram em sincronia
+com um bombardeio de grunhidos e gritos sibilantes vindos
+de todas as direções. Parcialmente refeito do choque e da
+hesitação iniciais, ele rompeu com a inércia do seu massivo
+corpo, tentando iniciar um movimento de fuga que lhe
+afastasse tanto do fogo como de uma horda de criaturas
+bípedes que surgiam de repente da floresta e corriam em sua
+direção. Bem no meio dessa caótica transição entre o medo
+imobilizante e o desejo obstinado de fuga, o touro sentiu o
+primeiro impacto penetrante em seus quartos. A dor que de
+imediato aflorou foi aguda e profunda; e mesmo antes de ele
+se dar conta de que suas patas traseiras não eram mais
+capazes de responder aos comandos motores emitidos pelo
+apelo de urgência vindo do seu cérebro em alerta máximo,
+múltiplos outros impactos semelhantes se seguiram, um após
+o outro, em um intervalo de poucos segundos, selando de vez
+o desfecho daquele encontro mortal. Tudo o que ele podia
+fazer então era se deixar guiar pelo peso da fraqueza que
+começou a varrer seu corpo e encontrar guarida na terra do
+solo que já o abraçava.
+Os urros selvagens se aproximaram mais e mais, até que,
+sem explicação, eles começaram a recuar, apesar de o touro
+sentir-se agora cercado por um grande grupo de caçadores
+eufóricos, cada um trajando vestes feitas de peles curtidas de
+animais; cada um empunhando com mãos ágeis e criativas
+uma lâmina ameaçadora feita de pedra lascada. O recuar das
+vozes, todavia, não indicava de forma alguma que esses
+caçadores desapareceriam precocemente. Pelo contrário, eles
+se fariam cada vez mais presentes por dezenas de milênios.
+Na realidade, a única coisa que se esvaía rapidamente naquele
+amanhecer era a capacidade de o bisão se manter alerta.
+Experimentando os seus últimos momentos na Terra, o touro
+ainda não podia crer na celeridade com que aquele encontro
+fatídico atingira o seu clímax.
+Embora isso não servisse de consolo, a cena que acabara de
+acontecer quase certamente seria imortalizada em uma
+pintura rupestre, em alguma caverna próxima ao lugar onde
+ele agora repousava – para honrar a sua memória e o seu
+sacrifício, para ilustrar a outras gerações de caçadores a tática
+usada naquela manhã ou, talvez, para consolidar a crença em
+um reino místico onde o touro passaria a habitar, depois de
+virar presa da ingenuidade de um novo modo de vida que ele
+jamais compreenderia e que para sempre mudaria o mundo ao
+seu redor. Nos seus últimos momentos de lucidez, aquele
+animal magnífico não tinha como saber que a sua capitulação
+havia sido planejada, cuidadosa e antecipadamente, e posta
+em prática, sem nenhum deslize, pelo mais poderoso, mais
+criativo e efetivo e, em alguns casos, o mais fatal computador
+orgânico distribuído criado pelos passos cegos e aleatórios do
+processo de seleção natural: uma Brainet humana.
+A reconstrução de uma caçada pré-histórica, mesmo que
+fictícia, permite capturar alguns dos principais atributos
+neurobiológicos resultantes do complexo processo evolucional
+iniciado quando os nossos ancestrais divergiram dos
+antepassados dos chimpanzés modernos, cerca de seis
+milhões de anos atrás. No todo, esse processo dotou a nossa
+espécie com capacidades mentais jamais vistas no reino
+animal. Ainda hoje, porém, permanecem muitas dúvidas
+sobre a cascata de eventos que precipitou o surgimento dessa
+incomparável adaptação neurológica. Longe de me perder em
+detalhes e filigranas, o meu objetivo aqui, portanto, é
+recuperar, em grandes pinceladas, algumas das
+transformações essenciais e dos mecanismos neurobiológicos
+centrais que permitiram que o cérebro do Homo sapiens
+moderno emergisse para tomar conta de todo o planeta e, no
+processo, criar o seu próprio universo. Mais especificamente,
+o meu objetivo central é descrever como esse computador
+orgânico – a forma pela qual eu me refiro ao cérebro humano
+– alcançou a sua configuração atual e, no processo, adquiriu
+os meios para gerar uma série de comportamentos humanos
+que provaram ser essenciais para a ascensão do Verdadeiro
+Criador de Tudo como o centro do universo humano.
+Historicamente, o primeiro fator que capturou a atenção de
+paleontologistas e antropológos como a provável causa do
+gradativo aumento de complexidade do comportamento
+humano durante o processo evolutivo foi o concomitante
+crescimento do tamanho do cérebro dos nossos ancestrais.
+Esse processo, conhecido como encefalização, começou por
+volta de dois milhões e meio de anos atrás (ver Figura 2.1).
+Até então, o cérebro dos primeiros hominídeos capazes de
+caminhar eretos, como a Australopithecus afarensis conhecida
+como Lucy, possuía por volta de 400 centímetros cúbicos de
+volume, similar ao de chimpanzés e gorilas modernos. Por
+volta de dois milhões e meio de anos atrás, porém, outro
+ancestral nosso, Homo habilis, um caçador e artesão
+competente, já exibia um volume cerebral de
+aproximadamente 650 centímetros cúbicos.
+Mais dois milhões de anos seriam necessários para que
+uma segunda etapa de crescimento acelerado do volume
+cerebral se manifestasse. Essa fase iniciou-se por volta de
+quinhentos mil anos atrás e estendeu-se pelos trezentos mil
+anos seguintes. Durante esse período, o cérebro do Homo
+erectus, o próximo ator de destaque no nosso épico
+evolucional, atingiu o pico de 1.200 centímetros cúbicos. De
+duzentos mil a trinta mil anos atrás, o volume cerebral dos
+nossos ancestrais alcançou o seu valor máximo com os
+neandertais, atingindo cerca de 1.600 centímetros cúbicos.
+Todavia, com o aparecimento da nossa própria espécie, Homo
+sapiens, o cérebro masculino reduziu-se a valores próximos
+dos 1.270 centímetros cúbicos, enquanto a média para as
+mulheres alcançou 1.130 centímetros cúbicos. O fator
+primordial que tem que ser levado em conta quando esses
+números são analisados é que, ao fim desses dois milhões e
+meio de anos de evolução, os cérebros da nossa linhagem
+humana cresceram muito mais que o resto do corpo. Isso
+significa que o crescimento em volume da massa cerebral
+humana, de aproximadamente três vezes, gerou um sistema
+nervoso que é por volta de nove vezes maior do que seria
+esperado para qualquer outro mamífero com o mesmo peso
+corpóreo que o nosso!
+Figura 2.1. Uma potencial árvore familiar para espécies de hominídeos. Pontos de
+interrogação indicam nodos onde os paleoantropólogos não têm certeza de como as
+ramificações ocorreram. (Cortesia de John Hawks. Originalmente publicado em Lee
+Berger e John Hawks, Almost Human: The Astonishing Tale of Homo Naledi and the
+Discovery that Changed Our Human Story [New York: National Geographic, 2017])
+Quando tentamos isolar que fatores poderiam explicar a
+triplicação do volume cerebral, ocorrida entre o surgimento
+do Australopithecus afarensis e o do Homo sapiens, nota-se que a
+maior parte desse crescimento, já normalizado pelo
+crescimento da massa corpórea, explica-se pelo explosivo
+aumento do volume do córtex cerebral, a fatia convoluta de
+tecido neural que forma a camada mais externa do sistema
+nervoso central. Esse dado é particularmente relevante porque
+o córtex está intimamente envolvido com a gênese das nossas
+capacidades cognitivas mais elaboradas, o extrato mental que
+verdadeiramente define a essência do que é ser humano. Na
+maioria dos primatas, o córtex corresponde a
+aproximadamente 50% do volume cerebral total. No ser
+humano, porém, o volume do córtex chega a quase 80% da
+massa do sistema nervoso central.
+Qualquer teoria que visa a explicar o crescimento cerebral
+explosivo da nossa linhagem tem que lidar com o paradoxo
+que tais cérebros consomem grande quantidade de energia.
+Portanto, à medida que os nossos ancestrais desenvolveram
+um cérebro cada vez maior, eles tiveram que resolver o
+problema fundamental de achar mais calorias para manter o
+funcionamento de um sistema nervoso cada vez mais faminto
+de energia. De fato, apesar de representar apenas 2% do peso
+corpóreo, nosso cérebro consome cerca de 20% de toda
+energia gerada por cada um de nós. Isso significa que os
+nossos ancestrais se confrontaram com duas possibilidades:
+ou eles precisaram ingerir muito mais comida por dia,
+expondo-se por mais tempo à mira dos predadores, como foi
+o caso do nosso bisão hipotético, ou modificaram a sua dieta
+básica para obter refeições com teor calórico mais elevado. O
+superávit energético começou a se materializar quando
+hominídeos modificaram a sua dieta original, baseada em
+folhagem e frutas, incorporando uma fonte alimentar capaz
+de gerar um superávit energético muito maior por volume
+ingerido. Foi assim que a carne animal (bem como a medula
+dos ossos), rica em proteína e gordura, passou a fazer parte
+permanente do menu dos nossos ancestrais. A situação
+melhorou ainda mais quando os hominídeos descobriram uma
+forma de produzir e controlar o fogo e, com essa habilidade
+revolucionária, criar a arte de cozinhar tanto carne animal
+como vegetais altamente energéticos. Usando essa nova
+estratégia alimentar, os nossos “chefes da pré-história”
+melhoraram, de maneira significativa, a facilidade com que
+eles podiam digerir refeições, extraíam mais energia por
+massa de alimento ingerido. Essa mudança na dieta ocorreu
+concomitantemente e possivelmente foi conduzida por outra
+adaptação evolucional fundamental: a redução considerável
+no tamanho e na complexidade dos nossos intestinos
+(especialmente o cólon). Dado que intestinos grandes e
+complexos consomem muita energia para funcionar de forma
+apropriada, a redução visceral produziu uma economia
+energética direcionada para a manutenção da operação de
+cérebros maiores.
+Mesmo levando em conta as novas fontes energéticas para
+manter cérebros de maior volume, a explicação de como os
+extraordinários sistemas nervosos surgiram pela primeira vez
+permanece um grande mistério. Depois de uma série de
+tentativas frustradas para achar uma resposta convincente,
+uma hipótese mais plausível para explicar o crescimento do
+cérebro de primatas e seres humanos começou a se
+materializar nos anos 1980, quando Richard Byrne e Andrew
+Witten propuseram que o volume do cérebro dos grandes
+símios e dos humanos cresceu desproporcionalmente em
+função do grande aumento em complexidade das sociedades
+formadas por essas espécies. Conhecida como a Teoria
+Maquiaveliana da Inteligência (TMI), essa hipótese propunha
+que, para que os grupos sociais formados por diferentes
+espécies de símios e pelos seres humanos sobrevivessem e
+prosperassem, cada indivíduo tinha que lidar com a tremenda
+complexidade derivada da dinâmica extremamente fluida que
+rege as relações sociais estabelecidas por membros dessas
+espécies. Para tanto, cada indivíduo teria que ser capaz de
+adquirir e interpretar apropriadamente o conhecimento social
+derivado do funcionamento cotidiano da sociedade em que ele
+se encontrava, de sorte a identificar tanto amigos e
+colaboradores como potenciais competidores e inimigos. De
+acordo com Byrne e Witten, portanto, o enorme desafio
+mental envolvido no processamento de grandes quantidades
+de informação social ditou que símios e, principalmente, seres
+humanos desenvolvessem cérebros desproporcionalmente
+maiores que seus ancestrais.
+Em outras palavras, a TMI propõe que cérebros grandes
+são necessários para o estabelecimento de um mapa social
+neural que descreve a complexidade e a dinâmica do grupo
+social a que cada indivíduo pertence e interage no seu
+cotidiano. Assim, essa teoria postula que cérebros grandes
+como o nosso são capazes de desenvolver uma representação
+neural conhecida como “teoria da mente”. Basicamente, essa
+extraordinária habilidade cognitiva nos dotou da capacidade
+não somente de reconhecer que outros membros do nosso
+grupo social possuem os próprios estados mentais
+individuais, mas também que cada um de nós pode
+continuamente gerar hipóteses à medida que interagimos com
+esses indivíduos, sobre o que cada um dos estados mentais de
+outras pessoas pode ser e significar para nossas interações
+com elas. Ou seja, ter uma teoria da mente nos permite
+avaliar o que outras pessoas estão pensando, seja sobre nós,
+seja sobre outros membros do nosso grupo social.
+Evidentemente, para desfrutar dessa enorme dádiva
+evolucional, foi preciso que esses mesmos cérebros volumosos
+nos garantissem a capacidade de expressar
+autorreconhecimento, autoconsciência e o estabelecimento do
+“ponto de vista próprio do cérebro”.
+Nos anos 1990, Robin Dunbar, antropólogo e psicólogo
+evolucionista britânico da Universidade de Oxford, obteve
+ampla evidência experimental em apoio à TMI. Primeiro, em
+vez de concentrar-se no volume cerebral total, Dunbar
+dedicou mais atenção ao córtex. Claramente, o raciocínio foi
+ditado pelo fato de que, mesmo sabendo que outras regiões do
+cérebro desempenham papéis fisiológicos fundamentais,
+quando se investigam as origens neurobiológicas de
+comportamentos humanos elaborados, como confecção de
+ferramentas, linguagem oral, estabelecimento de um senso de
+ser e teoria da mente, a nossa busca tem que se concentrar
+nos profundos vales e convoluções tortuosas que definem o
+córtex.
+Dunbar decidiu testar a TMI usando o único parâmetro de
+complexidade social em que ele e a equipe dele podiam pôr as
+mãos, de uma forma quantitativa, com razoável facilidade: o
+tamanho médio, em termos de número de indivíduos, de cada
+um dos grupos sociais estabelecidos por uma variedade de
+espécies de primatas, incluído a nossa.
+O surpreendente resultado obtido pelo faro investigativo de
+Dunbar encontra-se representado no gráfico da Figura 2.2.
+Como podemos ver facilmente, o logaritmo dos valores
+descrevendo o tamanho do grupo social de cada uma das
+espécies de primatas está correlacionado de forma linear ao
+logaritmo da fração de volume do córtex[1] de cada uma dessas
+espécies. Em outras palavras, com uma simples linha reta é
+possível estimar o tamanho ideal estabelecido pelo grupo
+social de uma espécie de primatas, bastando para esse cálculo
+obter a fração de volume ocupado pelo córtex no cérebro de
+cada espécie. Em homenagem a essa fantástica descoberta, a
+estimativa do tamanho do grupo social de uma espécie passou
+a ser conhecida como o número de Dunbar para dada espécie.
+Por exemplo, no caso dos chimpanzés, o número de Dunbar
+equivale a cinquenta indivíduos, o que significa que o volume
+do córtex dessa espécie é compatível com a capacidade de
+lidar com complexidade social gerada por meia centena de
+indivíduos.
+De acordo com a “teoria do cérebro social”
+, como a nova
+proposição de Dunbar ficou conhecida, o córtex
+superdimensionado nos dotou de capacidades mentais que
+nos permitem lidar com um grupo social formado por
+aproximadamente 150 indivíduos. De fato, a estimativa está
+em concordância com os dados obtidos em estudos
+envolvendo sociedades modernas de caçadores-coletores, bem
+como com a evidência arqueológica disponível referente ao
+tamanho das populações dos primeiros vilarejos humanos do
+período Neolítico, estabelecidos no Levante, mais conhecido
+como Oriente Médio.
+Figura 2.2. Correlação entre a média do tamanho do grupo social e da razão neocortical
+de diferentes primatas antropoides (macacos representados em pontos pretos e símios
+em círculos abertos). (Cortesia de R.I. Dunbar e S. Shultz, Evolution in the Social Brain,
+Science 317, 5843 [2007]:1344-47. Reproduzido com permissão da AAAS. Originalmente
+publicado em L. Barrett, J. Lycett, R. Dunbar, Human Evolutionary Psychology
+[Basingstoke, UK: Palgrave-Macmillan, 2002].)
+Posteriormente, outra hipótese proposta por Dunbar – de
+que existe um limite máximo de complexidade social que cada
+um de nós é capaz de gerenciar, usando apenas as nossas
+interações interpessoais, sem o auxílio de nenhum outro
+método artificial de gerenciamento ou controle social – foi
+testada em instituições (como empresas) que subitamente
+ultrapassaram o número de 150 indivíduos. Acima desse
+patamar, verificou-se a necessidade imperativa de introduzir
+supervisores, diretores e uma série de ferramentas e
+processos administrativos para se manter a par da dinâmica
+do grupo social humano que interage nessas organizações.
+Como curiosidade, a Figura 2.3 ilustra as estimativas de
+tamanho dos grupos sociais, obtidas com a teoria de Dunbar,
+para cada um dos nossos ancestrais mais importantes na
+“árvore de hominídeos” da qual somos descendentes. Nesses
+casos, a estimativa da fração do volume cortical foi obtida
+pela análise de crânios fossilizados conforme ilustrado na
+Figura 2.1. Basta inspecionar o gráfico para ter uma noção
+precisa do impressionante impacto social causado pelo
+processo de encefalização humana nos últimos quatro
+milhões de anos.
+Mas como os grupos sociais de primatas mantêm a sua
+integração e a sua coesão tendo um número tão grande de
+indivíduos? Em primatas não humanos, o ato de explorar, por
+longos períodos, os pelos corporais do companheiro em busca
+de insetos ou por pura diversão parece ser o comportamento
+mais fundamental na manutenção da higidez dos
+relacionamentos sociais de uma colônia de macacos ou
+símios. A ideia de que tal tarefa desempenha uma função
+social tão vital é apoiada pela descoberta de que primatas
+dedicam cerca de 10% a 20% do seu tempo a essa atividade. O
+fato de que opiáceos endógenos – conhecidos como
+“endorfinas” – são liberados em macacos durante essa
+prática provavelmente explica, pelo menos em parte, como a
+eficiente exploração coletiva do senso do tato sofisticado dos
+primatas pode criar uma união social tão longeva nessas
+sociedades; afinal, a evidência observacional indica que tal
+exploração tátil faz animais relaxarem e demonstrarem níveis
+de estresse mais reduzidos no convívio social.
+Diferentemente dos nossos primos primatas, a nossa
+espécie não dedica muito tempo da rotina diária caçando
+piolhos nos cabelos e pelos corpóreos dos seus companheiros
+de escritório, com o objetivo de manter a harmonia social no
+ambiente corporativo. Em todo caso, se essa fosse a estratégia
+preferencial usada pela nossa espécie para manter um
+convívio pacífico, Dunbar estima que seria necessário
+despender de 30% a 40% da rotina diária nesse embate tátil a
+fim de manter a harmonia social de um grupo formado por
+150 seres humanos. Em vez desse uso proibitivo das nossas
+polpas digitais, Dunbar argumenta que a nossa espécie se
+valeu de outra inovação comportamental para alcançar o
+mesmo objetivo de harmonia social atingido por outras
+espécies de primatas: a linguagem.
+Complementada por gestos, grunhidos e assobios, a
+linguagem oral articulada ofereceu à nossa espécie um meio
+muito eficiente para manter unido um grande grupo de seres
+humanos. De fato, Dunbar propôs um exemplo muito
+interessante do impacto da linguagem oral como forma de
+amálgama social humana. Ao estudar o conteúdo de conversas
+dispersas por diferentes grupos sociais na Inglaterra
+contemporânea, ele descobriu que, não importa quem esteja
+envolvido na conversa, aproximadamente dois terços destes
+diálogos revolvem ao redor das nossas vidas sociais. Em
+outras palavras, de acordo com a pesquisa de Dunbar,
+“fofocar” parece ser um dos hábitos mais populares da
+humanidade desde sempre. Esse achado sugere que a fofoca
+provavelmente foi um mecanismo essencial, desde o
+surgimento da linguagem oral entre os nossos ancestrais,
+para o funcionamento apropriado dos grandes grupos
+humanos da história evolucional.
+A despeito da aparente elegância e simplicidade dos
+argumentos de Dunbar, o processo de evolução raramente
+segue uma cascada linear de eventos como a teoria dele
+sugere. Pelo contrário, loops causais parecem interagir uns
+com os outros em paralelo, de sorte que múltiplos atributos
+tenderam a coevoluir, como resultado de uma pressão seletiva
+qualquer, e, portanto, influenciar a evolução um do outro.
+Como vários autores argumentaram desde que Dunbar propôs
+a sua hipótese do cérebro social nos anos 1990, essa cadeia
+causal convoluta provavelmente influenciou a relação entre o
+crescimento do córtex e o aumento da complexidade dos
+comportamentos sociais. Para começar, pode-se afirmar que
+o crescimento do cérebro e o surgimento da linguagem oral
+não só foram facilitados, como foram necessários, ou
+potencializados, pelo crescimento em complexidade dos
+comportamentos sociais humanos.
+Nesse contexto, nos últimos vinte anos, outra visão foi
+proposta, considerando-se a combinação de fatores que pode
+ter ditado a evolução humana e o processo de encefalização.
+Por exemplo, Joseph Henrich, professor do departamento de
+biologia evolutiva humana da Universidade de Harvard,
+defende veementemente a proposta de que a cultura humana
+desempenhou papel central na impulsão da evolução humana
+e, possivelmente, no crescimento cerebral. No seu livro The
+Secret of Our Success: How Culture Is Driving Human Evolution,
+Domesticating Our Species, and Making Us Smarter [O segredo do
+nosso sucesso: como a cultura propulsiona a evolução
+humana, domesticando a nossa espécie e fazendo-nos mais
+inteligentes], Henrich descreve, em detalhes, a sua teoria de
+como a transmissão de “práticas, procedimentos, técnicas,
+heurísticas, ferramentas, motivações, valores e crenças” por
+um grande número de gerações nos transformou em “animais
+culturais” por excelência. Ao aprender com os outros
+membros do seu grupo social, combinar o conhecimento
+acumulado e transmiti-lo para os nossos grupos sociais e,
+depois, para gerações futuras, a cultura humana não só
+proveu melhores meios de sobrevivência, como,
+eventualmente, criou uma nova pressão seletiva que
+favoreceu aqueles indivíduos mais capazes de aprender e
+assimilar esse patrimônio cultural. De acordo com essa visão,
+a evolução humana foi profundamente influenciada pelo que
+Henrich chama de coevolução gene-cultura, a interação
+recorrente e recíproca entre a nossa cultura e o nosso pool
+genético. Primariamente, esse processo se expressa pelo fato
+de que as interações dinâmicas humanas, que se originam em
+dado grupo social, geram produtos culturais como uma
+propriedade emergente do relacionamento paralelo dos
+múltiplos cérebros individuais pertencentes a esse grupo.
+Henrich define esse processo de aprendizado coletivo,
+refinamento e transmissão de conhecimento como um
+produto do “cérebro coletivo” de um grupo humano. Para
+mim, essa é a função central das Brainets humanas, o
+principal mecanismo por meio do qual o universo humano foi
+esculpido.
+De acordo com a visão de Henrich, o sucesso evolucionário
+experimentado pelo Homo sapiens depende muito mais da
+nossa habilidade de tirar vantagem do nosso cérebro coletivo
+que do poder do cérebro individual de cada um de nós. Essa
+hipótese explicaria parcialmente, por exemplo, por que
+hominídeos que exibiam cérebros bem menores, como os
+habitantes pré-históricos da ilha de Flores, na Indonésia,
+foram capazes de usar fogo para cozinhar ou produzir
+ferramentas feitas de pedra, a despeito de carregarem,
+individualmente, um cérebro cujo volume era equivalente aos
+nossos primos Australopithecus. A formação e a transmissão de
+cultura por Brainets teriam, então, compensado o volume
+reduzido dos cérebros individuais do Homo floresiensis. Essa
+hipótese sugere que o tamanho do cérebro por si só não é a
+única variável, nem talvez a mais relevante, que deve ser
+usada na avaliação da evolução da capacidade cognitiva
+humana.
+Embora eu concorde com a maioria dos argumentos de
+Henrich, parece-me evidente que a estrutura neuroanatômica
+única, bem como as propriedades neurofisiológicas
+específicas de cada cérebro individual, é característica
+essencial no processo de formação de Brainets adequadas,
+permitindo, assim, que grupos sociais humanos gerem e
+transmitam suas culturas e seus conhecimentos acumulados
+de maneira altamente eficaz (para mais detalhes, Capítulo 7
+deste volume).
+Uma implicação direta dessa teoria de coevolução genecultura – assim como os adendos acrescidos a ela pela minha
+teoria de Brainets – pode ser ilustrada por um dos produtos
+mais distintos da evolução humana: a capacidade sem igual de
+criar novas ferramentas. Quando os nossos ancestrais
+começaram a andar eretos, cerca de quatro milhões de anos
+atrás, eles aumentaram significativamente o alcance espacial
+das suas expedições diárias em busca de comida e abrigo. No
+tempo devido, essa fabulosa adaptação biológica permitiu aos
+hominídeos africanos se espalharem pela costa e pelo interior
+do continente e, subsequentemente, pelo mundo. Dessa
+forma, as primeiras ondas de colonização humana do planeta
+Terra, e as raízes do processo que hoje é conhecido como
+“globalização”
+, foram impulsionadas pelos pés de imigrantes
+andarilhos em busca de melhores condições de vida. Usando
+esse fato histórico como subsídio, um dia desses alguém
+deveria lembrar aos políticos neoliberais modernos essa épica
+jornada, sem a qual, o mundo que nos conhecemos não teria
+se tornado possível.
+No entanto, a possibilidade de andar ereto, sobre a planta
+dos dois pés, fez muito mais do que aumentar o alcance
+territorial do ser humano para todo o globo. Ela libertou os
+braços dos nossos ancestrais, permitindo que eles pudessem
+começar a exibir uma variedade de outros comportamentos
+motores, alguns dos quais envolvendo movimentos finos e
+precisos dos polegares e de outros dedos das mãos.
+Combinado com um aprimoramento seletivo dos circuitos
+corticais frontoparietais (que conectam neurônios nos lobos
+frontais e parietais do córtex), o bipedismo nos ofereceu a
+chance de usar as mãos para produzir uma variedade de
+ferramentas especializadas.
+Todavia, para a habilidade de criar ferramentas se
+manifestar plenamente, nossos ancestrais tiveram que
+adquirir o tino mental de identificar relações causais no
+mundo que os cercava. Por exemplo, um dos nossos
+antepassados, um dia, pode ter atirado uma pedra em uma
+parede de rocha maciça durante uma discussão mais
+acalorada com vizinhos. Depois de se acalmar, esse indivíduo
+talvez tenha observado casualmente que alguns dos
+fragmentos resultantes da quebra do seu petardo rochoso
+poderiam ser usados para cortar toda sorte de materiais,
+inclusive alguns dos alimentos mais importantes da sua dieta.
+A partir desse mero acidente, esse hominídeo pode ter
+experimentado novos meios de quebrar intencionalmente
+outras pedras, de forma a produzir melhores ferramentas de
+corte. Assim, logo que esse pioneiro começou a empregar o
+seu novo arsenal de lâminas de pedra, com grande sucesso,
+para retirar fatias de carne de carcaças animais, em um tempo
+muito mais curto que seus vizinhos, estes começaram a
+prestar mais atenção na forma como o vizinho temperamental
+produzia os seus instrumentos cortantes. Essa capacidade de
+planejar formas para transformar objetos do mundo exterior,
+combinada com a disseminação desse novo conhecimento por
+todo um grupo social, certamente define um dos atributos
+neurológicos que diferencia a nossa espécie dos outros
+primatas.
+O fenômeno por meio do qual as mesmas estruturas
+cerebrais, presentes em diferentes indivíduos, são ativadas
+simultaneamente pela execução de um ato motor de um
+membro desse grupo social é comumente conhecido como
+“ressonância motora”. Se os observadores desse ato motor
+começam a reproduzir os comportamentos motores
+observados por eles, estamos diante do fenômeno de
+“contágio motor”. Quando esse contágio se manifesta
+depressa, o fenômeno passa a ser referido como “mímica”.
+Circuitos especializados do cérebro de primatas (Capítulo 7)
+desempenham papel-chave na produção da ressonância
+motora que leva ao contágio ou à mímica em macacos,
+chimpanzés e seres humanos. Todavia, estudos comparativos
+da anatomia e da fisiologia dos circuitos corticais nesses três
+tipos de primatas revelaram a existência de diferenças
+importantes, em termos tanto de conectividade como de
+ativação funcional do cérebro durante a ocorrência de
+ressonância motora. Esses achados são essenciais porque
+esclarecem como o processo evolucionário pode ter
+influenciado a conectividade específica entre diferentes
+regiões dos lobos frontal, temporal e parietal do córtex, bem
+como os padrões de ativação funcional da imensa rede neural,
+levando ao estabelecimento de Brainets distintas em
+diferentes espécies de primatas.
+Via de regra, macacos rhesus valem-se menos de suas
+interações sociais para aprender novas habilidades motoras
+quando comparados aos chimpanzés. Estes, por sua vez,
+exibem nível menor de complexidade no que tange ao
+“aprendizado social” do que os seres humanos. Isso significa
+que exemplos de habilidades motoras adquiridas por meio de
+interações sociais, via ressonância motora e contágio, são
+raros em macacos. Chimpanzés selvagens, por sua vez, são
+capazes de expressar contágio de novas habilidades, como no
+caso de gestos para comunicação e construção de novas
+ferramentas. Em contraste a macacos e chimpanzés, nós,
+humanos, estamos sempre nos superando na capacidade de
+empregar a ressonância motora e o contágio para espalhar
+ideias, métodos e tecnologias por todo o nosso grupo social.
+Esse fenômeno materializa-se quer localmente, com gestos
+manuais e linguagem oral, quer a distância, utilizando uma
+enorme variedade de meios e tecnologias de comunicação de
+massa desenvolvidos pelos nossos “cérebros coletivos”.
+Existem duas possibilidades por meio das quais um
+observador pode utilizar o contágio de um novo ato motor:
+emulação ou imitação. Enquanto a emulação se refere ao ato
+de focar na cópia do resultado do ato motor observado, a
+imitação expande consideravelmente o foco para incluir a
+reprodução ou a cópia de todo o processo necessário para
+atingir um objetivo. Quando dados comportamentais
+comparativos são analisados, o consenso é de que macacos
+primariamente emulam em vez de imitar, enquanto, no caso
+dos chimpanzés, a imitação é mais comum. Chimpanzés são
+capazes de observar, adquirir, copiar e transmitir para outros
+membros da sua espécie novos processos para executar um
+comportamento motor. Essa característica sugere que esses
+grandes símios possuem a capacidade de desenvolver e
+sustentar um protótipo de cultura motora entre si.
+Ainda assim, a despeito da capacidade de imitar,
+chimpanzés o fazem com menor frequência que os seres
+humanos. Essencialmente, isso significa que os chimpanzés
+ainda focam mais no ato de emular – copiar o produto final
+de um comportamento motor –, enquanto os seres humanos
+são muito melhores no ato de imitar – focando
+primordialmente na reprodução do processo por meio do qual
+se chega a um objetivo motor (por exemplo, construir uma
+nova ferramenta de pedra lascada). Além disso, graças ao
+aprimoramento significativo da banda de comunicação gerada
+com o advento da linguagem oral, humanos desempenham
+com muito mais proficiência a tarefa de ensinar novas
+habilidades para outros membros da espécie. Em outras
+palavras, nos caso dos seres humanos, uma nova ideia
+espalha-se muito mais eficientemente por meio de uma boa
+fofoca!
+Uma vez que uma nova ideia sobre como construir uma
+nova ferramenta, por exemplo, é gerada por um indivíduo ou
+um pequeno time de colaboradores, por meio de um
+mecanismo discutido em detalhes no Capítulo 7, a
+ressonância e o contágio motor garantirão que essa nova
+visão espalhe-se e contamine (quase como um vírus) um
+número elevado de outros indivíduos de um grupo social. Esse
+verdadeiro recrutamento mental é responsável, então, pela
+criação de uma Brainet coesa voltada à confecção de um
+utensílio que melhora os métodos empregados tanto no
+processo de manufatura como no acúmulo do conhecimento e
+da experiência obtidos por todo um grupo social humano,
+bem como a distribuição desse patrimônio intelectual para
+futuras gerações.
+Seja qual for a forma pela qual a primeira ferramenta de
+caça tenha sido criada pelos nossos ancestrais, a arte de
+“knapping”
+, que definiu as bases da primeira Revolução
+Industrial humana, e a habilidade de criar ferramentas em
+geral evoluíram por um processo incremental de descoberta,
+aprimoramento e adição de graus de complexidade. Embora
+milhões de anos tenham sido necessários para que os
+primeiros e primitivos machados de mão feitos de pedra pelos
+nossos ancestrais tenham se transformados em lanças afiadas
+e precisas, permitindo a bandos de caçadores humanos
+abaterem grandes presas a distância, a manufatura e o uso
+indiscriminado de uma variedade de ferramentas se
+transformaram em atributos fundamentais da condição
+humana. De fato, apesar de outros animais, inclusive
+chimpanzés, serem capazes de produzir ferramentas
+rudimentares, os seus artefatos não exibem o mesmo padrão
+de complexidade da criação tecnológica praticada por seres
+humanos. Da mesma forma, essas espécies animais não
+exibem a capacidade, única do Homo sapiens, de adquirir,
+acumular e transmitir conhecimento específico, de uma
+geração para outra, por centenas, milhares ou milhões de
+anos.
+Assim, dado que a habilidade mental de gerar
+conhecimento emergiu em uma espécie que se esbalda tanto
+em colaborar como em contar vantagem sobre isso, esse
+atributo permitiu que novas abordagens para lascar pedras
+fossem disseminadas, levando ao desencadeamento de uma
+verdadeira revolução na forma de os nossos antepassados
+viverem. A partir desse momento, para ser bem-sucedido e
+atingir algum tipo de impacto no seu grupo social, os
+pioneiros mestres artesãos, envolvidos na confecção de novas
+ferramentas, tiveram que complementar suas habilidades
+naturais para a atividade manual com a capacidade de
+alardear amplamente as suas invenções. Essa fusão de
+habilidades provou ser fundamental, uma vez que, sem o uso
+da forma dominante de “marketing pré-histórico” – a fofoca
+–, o novo conhecimento adquirido por esses indivíduos
+inevitavelmente desapareceria, sem deixar marca ou vestígio,
+abandonado como um prisioneiro confinado na cela solitária
+dos confins mais profundos do cérebro de seus criadores.
+A acumulação, o refinamento e a transmissão de
+conhecimento por Brainets humanas pode explicar também o
+surgimento da mais temida e eficiente arma usada pelos
+nossos ancestrais pré-históricos durante a caça de grandes
+presas. Refiro-me à capacidade humana de planejar e
+coordenar a atividade conjunta de grandes aglomerados
+humanos. Essa tarefa hercúlea envolve não só a habilidade de
+comunicar-se efetivamente, e a cada instante no tempo, com
+todos os indivíduos que formam um grupo de caça, como
+também de coordenar uma série de outras atividades mentais
+mais sutis que permitem que cada indivíduo desse grupo, bem
+como os seus líderes, seja capaz de reconhecer o que outros
+parceiros pensam sobre toda a empreitada, bem como os
+papéis alocados a cada um. Some-se a essa lista a capacidade
+de avaliar continuamente o que cada pessoa é capaz de
+enfrentar, física e mentalmente, durante a execução de uma
+tarefa tão estressante, e potencialmente fatal, como uma
+caçada como essa. Em paralelo, a linguagem oral possibilitou
+o surgimento de uma nova forma de comunicação explorada
+ao limite, como o mais importante meio de disseminar relatos
+elaborados dos épicos encontros para comunidades humanas
+inteiras que nunca tiveram a oportunidade de presenciar uma
+dessas caçadas. Começava aqui a grande saga dos mitos e das
+religiões que invadiram a mente humana como o fogo que se
+espalha pelos arbustos secos das grandes savanas africanas.
+O surgimento da linguagem oral, da capacidade de
+confeccionar ferramentas, a teoria da mente e a inteligência
+social sem rival oferecem, individual e coletivamente, pistas
+sobre o processo que direcionou o crescimento sem
+precedentes do córtex humano ao longo dos últimos dois
+milhões e meio de anos da nossa evolução. Simultaneamente,
+a ocorrência de tantas inovações evolutivas é responsável por
+um grande mistério: como todas essas habilidades poderiam
+ter se fundido para garantir o funcionamento tão fluido da
+mente humana?
+Steven Mithen, professor de arqueologia da Universidade
+de Reading, na Inglaterra, escreveu extensivamente sobre
+essa questão e propôs uma hipótese interessante sobre como
+uma mente holística, capaz de exibir fluidez cognitiva como a
+nossa, pode ter emergido pela fusão de atributos e
+capacidades mentais específicos. Influenciado pela teoria de
+múltiplas inteligências, proposta por Howard Gardner,
+Mithen identificou três fases genéricas por meio das quais a
+fusão da mente humana pode ter ocorrido. De acordo com a
+sua tese, inicialmente a mente dos nossos ancestrais
+hominídeos era dominada por uma “inteligência geral, uma
+série de rotinas genéricas voltadas para o aprendizado e a
+tomada de decisões”. Com o passar do tempo, os nossos
+ancestrais adquiriram novas inteligências individuais, como
+linguagem, capacidade de confecção de ferramentas e teoria
+da mente, mas o cérebro deles ainda não era capaz de integrar
+esses novos módulos: pelo contrário, de acordo com a
+analogia proposta por Mithen, os cérebros pré-históricos
+operariam como um sofisticado canivete suíço: possui
+múltiplas ferramentas especializadas, mas é incapaz de
+integrá-las em um todo funcional. No estágio final do modelo
+de Mithen, os módulos individuais seriam finalmente
+integrados ou fundidos em uma entidade única e coerente que
+teria dado origem à mente humana moderna. Nesse ponto,
+tanto a informação como o conhecimento adquiridos por cada
+um desses módulos – ou circuitos neurais especializados –
+poderiam ser trocados livremente entre eles, em um processo
+que eventualmente levou ao aparecimento de novos
+derivativos mentais e novas habilidades cognitivas que
+dotaram a mente humana com as suas características de
+fluidez, criatividade, intuição e a possibilidade de gerar novas
+ideias e inovações que não teriam sido produzidas
+independentemente por módulos isolados.
+Embora outros cientistas critiquem a teoria de Mithen,
+bem como as suas analogias, eu as considero pelo menos
+interessantes como ponto de partida para conectar o que é
+conhecido sobre a evolução anatômica do córtex humano,
+desde o nosso ponto de divergência com chimpanzés, com os
+detalhes do funcionamento da mente humana moderna, que
+surgiu depois do suposto processo de fusão cortical. Em seus
+escritos, Mithen não propõe nenhum mecanismo
+neurobiológico para explicar a fusão de inteligências
+específicas em um todo cortical integrado. Essa omissão é
+justificável porque a vasta maioria das inferências feitas sobre
+a evolução do funcionamento da mente humana baseia-se
+apenas na análise de moldes do interior de crânios
+fossilizados, que raramente se encontram intactos durante o
+processo de recuperação. Isso não significa que esses fósseis
+sejam inúteis: a reconstrução desses crânios (para uma
+amostra, Figura 2.1) permite que cientistas obtenham
+estimativas bem precisas do volume total dos cérebros de
+todos os nossos ancestrais. Além disso, esses moldes nos
+permitem analisar impressões do tecido cerebral na superfície
+interior do crânio desses indivíduos. No todo, a análise
+comparativa desses moldes revelou que, além de mudanças
+claras de volume, a forma do cérebro sofreu alterações
+importantes ao longo da nossa evolução, desde o
+Australopithecus afarensis, passando pelo Homo habilis, pelo
+Homo erectus, pelo Homo neanderthalis, até desembocar no
+Homo sapiens.
+Outra forma de avaliar o que aconteceu durante a evolução
+do cérebro humano passa pela comparação da sua anatomia
+moderna com aquela de outros primatas, como macacos
+rhesus e chimpanzés. O chimpanzé moderno também é
+produto de um processo evolutivo que continuou desde que as
+nossas duas espécies se separaram, aproximadamente seis
+milhões de anos atrás. Ainda assim, apesar de não podermos
+assumir que o cérebro do chimpanzé atual é idêntico ao do
+nosso ancestral comum, podemos usar o sistema nervoso
+desse grande símio como parâmetro de comparação. Na
+realidade, essas comparações têm sido realizadas, por muitas
+décadas, pela comunidade de neuroanatomistas interessados
+no estudo da evolução do cérebro humano. A introdução de
+novas técnicas de imagem cerebral ajudou, e muito, na coleta
+de detalhes ainda mais específicos sobre a tremenda expansão
+do córtex humano, quando comparada com o nosso primo
+mais próximo.
+Em geral, o neocórtex é formado por dois componentes
+principais: a substância cinzenta e a branca. A cinzenta
+contém grandes aglomerados de neurônios, principal célula
+do sistema nervoso, cercados por outros tipos de células,
+conhecidas coletivamente como “glia”
+, que desempenham
+múltiplas outras funções de suporte aos neurônios. A branca,
+por sua vez, é formada por uma vasta rede de nervos,
+empacotados em feixes. Esses feixes nervosos provêm a
+extensa rede de cabos necessária para conectar as áreas
+corticais que definem os quatro principais lobos do córtex –
+frontal, parietal, temporal e occipital – em cada hemisfério
+cerebral. Densos feixes de nervos também formam a
+volumosa conexão que liga reciprocamente o hemisfério
+cerebral direito ao esquerdo, formando uma estrutura
+conhecida como “corpo caloso”. Outros feixes nervosos da
+substância branca definem as verdadeiras autoestradas
+neurais, através das quais o córtex recebe e emite mensagens
+para as chamadas “estruturas subcorticais”
+, por exemplo, a
+medula espinhal. As substâncias cinzenta e branca podem ser
+claramente separadas do córtex. A primeira é dividida em seis
+camadas de aglomerados de neurônios, justapostas
+verticalmente, uma em cima da outra. Esses neurônios, que
+definem o córtex propriamente dito, encontram-se no topo de
+um sólido bloco de substância branca cortical.
+Nos anos 1990, John Allman, eminente neurocientista do
+Instituto de Tecnologia da Califórnia que dedicou sua carreira
+a estudar a evolução cerebral de mamíferos, descobriu uma
+relação evolucional impressionante entre a substância
+cinzenta e a branca. A descoberta de Allman materializou-se
+claramente depois que ele plotou o volume da substância
+cinzenta cortical em função do volume equivalente de
+substância branca, levando em conta um número elevado de
+espécies de mamíferos, inclusive primatas e humanos. O
+resultado da análise foi a descoberta de uma relação
+exponencial:
+Volume da substância branca = volume da substância
+cinzenta4/3
+O expoente dessa equação – quatro terços – indica que, à
+medida que o córtex acresce neurônios, o volume da
+substância branca cresce muito mais rapidamente (Figura
+2.4). Quando examinamos os dados relacionados aos primatas
+e focamos no que exatamente mudou no córtex humano, em
+relação aos nossos parentes primatas, verificamos que a
+maior parte do crescimento cortical observado em seres
+humanos se localizou no lobo frontal, em especial no polo
+anterior mais extremo, conhecido como “córtex pré-frontal”
+,
+seguido da expansão das áreas corticais associativas na região
+posterior do lobo parietal e do lobo temporal.
+Quando comparado ao do macaco rhesus, o lobo frontal dos
+seres humanos exibe um crescimento volumétrico de cerca de
+trinta vezes. Como previsto por John Allman, a maior parte
+desse crescimento é representada pela expansão da substância
+branca, resultando em um aprimoramento bastante
+importante das conexões do expandido córtex pré-frontal,
+bem como as áreas corticais motoras e pré-motoras do lobo
+frontal, para outras partes do córtex, incluindo regiões dos
+lobos parietal e temporal e estruturas subcorticais.
+Figura 2.4 Relação entre substância branca e cinzenta cortical em 59 espécies animais.
+Note que a escala de ambos os eixos é logarítmica. (Reproduzida com permissão do
+original publicado por K. Zhang e T. J. Sejnowski, “A Universal Scaling Law between
+Gray Matter and White Matter of Cerebral Cortex”, Proceedings of the National Academy
+of Sciences EUA 97, n. 10 [2000]: 5621–26. Copyright [2000] National Academy of
+Sciences, EUA.)
+A explosão volumétrica da substância branca do lobo
+frontal humano, em concomitância com a expansão das áreas
+associativas do córtex parietal e temporal, indica que uma
+proporção muito maior do córtex humano passou a se dedicar
+à gênese de pensamento abstrato e conceitual de alta
+complexidade, o tipo de material neural que define as nossas
+habilidades cognitivas únicas. Não por coincidência, portanto,
+os neurocientistas que buscavam identificar os circuitos
+corticais envolvidos na produção e na interpretação da
+linguagem, da confecção de ferramentas, na definição do
+senso de ser, na inteligência social e na teoria da mente –
+atributos que surgiram ao longo dos últimos quatro milhões
+de anos – descobriram que eles se situavam nas difusas redes
+formadas pelas verdadeiras autoestradas nervosas que
+conectam reciprocamente áreas corticais residentes nos lobos
+frontal, parietal e temporal. É por essa razão que identifiquei
+nessa mesma rede neural o substrato orgânico computacional
+que deu origem ao Verdadeiro Criador de Tudo.
+Usando a gigantesca gama de informação, a minha
+conclusão é simples: para possibilitar a evolução de grandes e
+complexos agrupamentos sociais, capazes de gerar elaborados
+comportamentos, incluindo a capacidade de adquirir e
+transmitir uma cultura própria por milênios a fio, o cérebro
+humano precisou acumular mais neurônios. Todavia, tão
+importante quanto o volume neuronal, para atingir o seu
+cume cognitivo, o padrão de conectividade neural único do
+cérebro provavelmente desempenhou papel ainda mais
+essencial para o surgimento das faculdades mentais
+extraordinárias que fazem parte da certidão de nascimento da
+nossa espécie, lavrada pelas mãos invisíveis do processo
+evolutivo.
+Otimamente conectado por dentro para ser capaz de se
+hiperconectar por fora: essa parece ser a máxima central do
+processo de crescimento cerebral humano ao longo da
+evolução. Todavia, não basta para explicar como todos os
+atributos mentais humanos individuais se fundiram para criar
+a mente fluida do Homo sapiens. Da mesma forma, esse
+aforismo não elucida onde devemos procurar os mecanismos
+neurofisiológicos que habilitaram o córtex expandido a
+estabelecer grupos sociais maiores, mais coesos, mais
+criativos e mais fofoqueiros. Nos corredores da neurociência
+moderna, a primeira indagação dessa lista é conhecida como
+“problema da encadernação cortical”. Nos últimos trinta
+anos, esse mistério tem sido assunto de discussões
+extremamente acaloradas, sobretudo entre os neurocientistas
+que estudam o sistema visual. O intenso debate se dá porque o
+mais aceito arcabouço teórico dessa área, o modelo do sistema
+visual proposto pelos neurocientistas David Hubel e Torsten
+Wiesel, ganhadores do Prêmio Nobel de Fisiologia e Medicina,
+há mais de meio século não oferece nenhuma solução para o
+“problema da encadernação”. Na verdade, esse modelo
+clássico nem reconhece a existência do problema como algo
+real e importante. A segunda questão, porém, é essencial para
+entender por que nós, humanos, fomos tão bem-sucedidos
+em construir o tipo de grupo social criativo o suficiente para
+esculpir todo um cosmo, o universo humano.
+Esses tópicos, que serão discutidos nos próximos capítulos,
+podem ser resumidos em duas perguntas básicas: como o
+córtex se fundiu em um único sistema computacional
+analógico ou contínuo e como ele permite que milhares,
+milhões ou bilhões de cérebros individuais se sincronizem em
+Brainets?

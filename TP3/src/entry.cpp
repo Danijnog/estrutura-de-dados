@@ -3,12 +3,9 @@
 
 int countCharactersOfFile(const char *filename) {
     FILE *file = fopen(filename, "r");
-    if(file == nullptr)
-    {
-        cout << "Não foi possível abrir o arquivo na função countCharactersOfFile() do arquivo entry.cpp.\n";
-        exit(1);
-    }
     int count = 0;
+    if(file == nullptr)
+        throw fileNotFoundOnEntry();
 
     while(fgetc(file) != -1) // A função fgetc lê cada caracter do arquivo
         count++;
@@ -16,22 +13,22 @@ int countCharactersOfFile(const char *filename) {
     return count;
 }
 
-void readEntry(const char *filename, unsigned char *text) {
+void readFile(const char *filename, unsigned char *text) {
     FILE *file = fopen(filename, "r");
     if(file == nullptr)
-        cout << "Não foi possível abrir o arquivo na função readEntry() do arquivo entry.cpp." << endl;
+        throw fileNotFoundOnEntry();
 
-    char letra;
+    char letter;
     int i = 0;
     while(1)
     {
-        letra = fgetc(file);
+        letter = fgetc(file);
         if(feof(file))
             break;
             
-        if(letra != -1) // Verificação para checar que não vai ser pego caracteres inválidos do arquivo
+        if(letter != -1) // Verificação para checar que não vai ser pego caracteres inválidos do arquivo
         {
-            text[i] = letra;
+            text[i] = letter;
             i++;
         }
     }
@@ -49,11 +46,11 @@ int validateEntry(int argc, char **argv) {
         switch(aux)
         {
             case 'c': // Compactar
-                choosenOption = COMPACTAR;
+                choosenOption = COMPRESS;
                 break;
             
             case 'd': // Descompactar
-                choosenOption = DESCOMPACTAR;
+                choosenOption = DECOMPRESS;
                 break;
             
             case 'h': // Ajuda
@@ -64,12 +61,10 @@ int validateEntry(int argc, char **argv) {
                 cout << endl;
                 cout << "Comandos para descompactar um arquivo: " << endl;
                 break;
-
             
             default:
                 cout << "Opção inválida ou ausente: " << optopt << endl; // Saída de erro
                 break;
-
         }
     }
     return choosenOption;
@@ -78,10 +73,19 @@ int validateEntry(int argc, char **argv) {
 void writeEntryOnAuxFile(const char *filename, unsigned char *text) {
     FILE *file = fopen(filename, "w");
     if(file == nullptr)
-    {
-        cout << "Não foi possível abrir o arquivo na função writeEntryOnAuxFile do arquivo entry.cpp";
-        exit(1);
-    }
+        throw fileNotFoundOnEntry();
 
     fputs(reinterpret_cast<const char*>(text), file);
+}
+
+long int getFileSize(char *filename) {
+    FILE* file = fopen(filename, "rb");
+
+    if (file == nullptr)
+        throw fileNotFoundOnEntry();
+
+    fseek(file, 0, SEEK_END);  // Move o ponteiro para o final do arquivo
+    long int fileSize = ftell(file);  // Obtém a posição atual do ponteiro (tamanho do arquivo)
+
+    return fileSize;
 }

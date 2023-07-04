@@ -1,60 +1,60 @@
 #include "huffman.h"
-#include "tabelaFrequencia.h"
+#include "frequenceTable.h"
 
-List::List() {
-    inicio = nullptr;
+Huffman::Huffman() {
+    begin = nullptr;
     size = 0;
 }
 
-void List::sortedInsert(No *no) {
+void Huffman::sortedInsert(No *no) {
     No *aux;
 
     // Checar se a lista está vazia
-    if(inicio == nullptr)
+    if(begin == nullptr)
     {
-        inicio = no;
+        begin = no;
         size++;
     }
     
     // Analisar a frequência do nó que queremos inserir e a frequência do nó inicial
-    else if(no->getFrequence() < inicio->getFrequence())
+    else if(no->getFrequence() < begin->getFrequence())
     {
-        no->setProximo(inicio);
-        inicio = no;
+        no->setNextNo(begin);
+        begin = no;
         size++;
     }
 
     // Nesse caso a frequência do nó que queremos inserir é maior que a frequência do nó do início
     else
     {
-        aux = inicio;
+        aux = begin;
         // Enquanto existir um próximo nó e a frequência desse próximo nó for menor que a frequência do nó que quero inserir
-        while(aux->getProximo() && aux->getProximo()->getFrequence() <= no->getFrequence())
-            aux = aux->getProximo(); // Caminha na lista
+        while(aux->getNextNo() && aux->getNextNo()->getFrequence() <= no->getFrequence())
+            aux = aux->getNextNo(); // Caminha na lista
 
-        no->setProximo(aux->getProximo());
-        aux->setProximo(no);
+        no->setNextNo(aux->getNextNo());
+        aux->setNextNo(no);
         size++;
     }
 }
 
-void List::fillList(unsigned int *table) {
-    No *novo;
+void Huffman::fillList(unsigned int *table) {
+    No *newNo;
 
     for(int i = 0; i < TAM; i++)
     {
         if(table[i] > 0)
         {
-            novo = new No();
-            if(novo)
+            newNo = new No();
+            if(newNo)
             {
-                novo->setCharacter(i); // O caracter do nó vai ser a posição i
-                novo->setFrequence(table[i]); // A frequência do nó vai ser a frequência que está na posição i da tabela
-                novo->setProximo(nullptr);
-                novo->setLeftNo(nullptr);
-                novo->setRightNo(nullptr);
+                newNo->setCharacter(i); // O caracter do nó vai ser a posição i
+                newNo->setFrequence(table[i]); // A frequência do nó vai ser a frequência que está na posição i da tabela
+                newNo->setNextNo(nullptr);
+                newNo->setLeftNo(nullptr);
+                newNo->setRightNo(nullptr);
 
-                sortedInsert(novo);
+                sortedInsert(newNo);
             }
 
             else
@@ -63,60 +63,60 @@ void List::fillList(unsigned int *table) {
     }
 }
 
-void List::printList() {
-    No *aux = inicio;
+void Huffman::printList() {
+    No *aux = begin;
 
     cout << "\nLista encadeada ordenada, tamanho: " << size << endl;
     while(aux != nullptr)
     {
         cout << "\tCaracter: " << aux->getCharacter() << " " << "Frequencia: " << aux->getFrequence() << endl;
-        aux = aux->getProximo();
+        aux = aux->getNextNo();
     }
 }
 
-No *List::popFromList() {
+No *Huffman::popFromList() {
     No *aux = nullptr;
 
-    if(inicio != nullptr)
+    if(begin != nullptr)
     {
-        aux = inicio;
-        inicio = aux->getProximo(); // O início da lista vai ser o próximo ponteiro
-        aux->setProximo(NULL);
+        aux = begin;
+        begin = aux->getNextNo(); // O início da lista vai ser o próximo ponteiro
+        aux->setNextNo(NULL);
         size--;
     }
     return aux;
 }
 
-No *List::buildTree() {
-    No *primeiro, *segundo;
-    No *novo;
+No *Huffman::buildTree() {
+    No *first, *second;
+    No *newNo;
 
     while(size > 1)
     {
-        primeiro = popFromList();
-        segundo = popFromList();
-        novo = (No*) malloc(sizeof(No)); // Cast the pointer to No*
+        first = popFromList();
+        second = popFromList();
+        newNo = (No*) malloc(sizeof(No));
 
-        if(novo)
+        if(newNo)
         {
-            novo->setCharacter('+'); // O caracter desse nó é indiferente, pois ele é um nó intermediário
-            int somaFrequencia = primeiro->getFrequence() + segundo->getFrequence();
-            novo->setFrequence(somaFrequencia); // Frequencia do novo nó
+            newNo->setCharacter('+'); // O caracter desse nó é indiferente, pois ele é um nó intermediário
+            int somaFrequencia = first->getFrequence() + second->getFrequence();
+            newNo->setFrequence(somaFrequencia); // Frequencia do novo nó
 
-            novo->setLeftNo(primeiro); // O nó da esquerda aponta pro primeiro nó que foi removido
-            novo->setRightNo(segundo); // O nó da direita aponta pro segundo nó que foi removido
-            novo->setProximo(NULL);
+            newNo->setLeftNo(first); // O nó da esquerda aponta pro primeiro nó que foi removido
+            newNo->setRightNo(second); // O nó da direita aponta pro segundo nó que foi removido
+            newNo->setNextNo(NULL);
 
-            sortedInsert(novo); // Insere o novo nó na lista
+            sortedInsert(newNo); // Insere o novo nó na lista
         }
 
         else
             throw "Não foi possível alocar memória para o novo nó ao construir a árvore! Função: buildTree()";
     }
-    return inicio;
+    return begin;
 }
 
-void List::printTree(No *raiz, int size) {
+void Huffman::printTree(No *raiz, int size) {
     // Na árvore de huffman vamos imprimir somente os nós folhas
     if(raiz->getLeftNo() == NULL && raiz->getRightNo() == NULL)
         cout << "\tFolha: " << raiz->getCharacter() << " " << "Altura: " << size << endl;

@@ -1,15 +1,21 @@
-#include "tabelaFrequencia.h"
+#include "frequenceTable.h"
 #include "huffman.h"
-#include "dicionario.h"
+#include "dictionary.h"
 #include "compress.h"
 #include "entry.h"
+
+// Definição de cores que serão usadas no terminal      
+#define GREEN   "\033[32m"      
+#define YELLOW  "\033[33m" 
+#define MAGENTA "\033[35m"          
+#define CYAN    "\033[36m"
 
 int main (int argc, char **argv) {
     frequenceTable frequenceTable;
     Dictionary dictionary;
     Compress compress;
     No *arvore;
-    List list;
+    Huffman huffman;
     unsigned char *text;
     int size;
     char path[] = ""; // Variavel utilizada para construir o dicionário de textos
@@ -19,7 +25,7 @@ int main (int argc, char **argv) {
     int choosenOption = validateEntry(argc, argv);   // Verificar a opção escolhida pelo usuário
     switch(choosenOption)
     {
-        case COMPACTAR:
+        case COMPRESS:
             file = fopen(argv[2], "r");
             size = countCharactersOfFile(argv[2]);
             text = (unsigned char*)calloc(size + 2, sizeof(unsigned char));
@@ -27,40 +33,36 @@ int main (int argc, char **argv) {
             if(file == nullptr)
                 cout << "Não foi possível abrir o arquivo na função main durante a compactação!\n";
             
-            readEntry(argv[2], text);
-            printf("TEXTO ");
-            cout << text << endl;
+            readFile(argv[2], text);
             writeEntryOnAuxFile("arquivoAuxiliar.txt", text);
 
              // Tabela de frequência
             unsigned int freqTable[TAM];
             frequenceTable.initializeFrequenceTableWith0(freqTable);
             frequenceTable.fillFrequenceTable(text, freqTable);
-            frequenceTable.printFrequenceTable(freqTable);
 
             // Lista encadeada ordenada
-            list.fillList(freqTable);
+            huffman.fillList(freqTable);
 
             // Arvore de huffman a partir da lista
-            arvore = list.buildTree();
-            cout << "\nArvore de Huffman \n";
-            list.printTree(arvore, 0);
+            arvore = huffman.buildTree();
 
             // Dicionário do texto codificado
             columns = No::treeHeight(arvore) + 1; // Temos que incluir o + 1 por causa do caracter final \0 de strings
             char **dictionary_;
             dictionary_ = dictionary.alocateDictionary(columns);
             dictionary.buildDictionary(dictionary_, arvore, path, columns);
-            dictionary.printDictionary(dictionary_);
 
             // Codificar cada caracter e concatena o código
             char *encodeText;
             encodeText = dictionary.encode(dictionary_, text);
                
             // Gerar um arquivo compactado de fato
-            cout << "\tCompactando....\n";
+            cout << YELLOW << "\nCompactando....\n";
             compress.compress(reinterpret_cast<unsigned char*>(encodeText), argv[3]);
-
+            cout << CYAN << "\tTamanho do arquivo original: " << MAGENTA << getFileSize(argv[2])/1000 << "KB" << endl;
+            cout << GREEN << "\t✓ " << CYAN << "Tamanho do arquivo compactado: " << GREEN << getFileSize(argv[3])/1000 << "KB" << endl;
+    
             free(text);
             for(int i = 0; i < columns; i++)
                 free(dictionary_[i]);
@@ -70,7 +72,7 @@ int main (int argc, char **argv) {
             fclose(file);
             break;
         
-        case DESCOMPACTAR:
+        case DECOMPRESS:
             // A tabela de frequência e a árvore de Huffman vai ser remontada a partir do arquivoAuxiliar gerado
             file = fopen("arquivoAuxiliar.txt", "r");
             size = countCharactersOfFile("arquivoAuxiliar.txt");
@@ -79,7 +81,7 @@ int main (int argc, char **argv) {
             if(file == nullptr)
                 cout << "Não foi possível abrir o arquivo na função main durante a compactação!\n";
             
-            readEntry("arquivoAuxiliar.txt", text);
+            readFile("arquivoAuxiliar.txt", text);
             
             // Tabela de frequência
             unsigned int freqTableAux[TAM];
@@ -87,18 +89,19 @@ int main (int argc, char **argv) {
             frequenceTable.fillFrequenceTable(text, freqTableAux);
 
             // Lista encadeada ordenada
-            list.fillList(freqTableAux);
+            huffman.fillList(freqTableAux);
 
             // Arvore de huffman a partir da lista
-            arvore = list.buildTree();
+            arvore = huffman.buildTree();
 
-            cout << "Descompactando....\n";
+            cout << YELLOW << "\nDescompactando....\n";
             compress.decompress(arvore, argv[2], argv[3]);
+            cout << GREEN << "\t✓ " << "Arquivo descompactado com sucesso!" << endl;
+            cout << CYAN << "\tArquivo gerado: " << GREEN << argv[3] << endl;
 
             fclose(file);
             break;
     }
-
     return 0;  
 }
 
