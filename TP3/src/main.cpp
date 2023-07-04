@@ -21,6 +21,7 @@ int main (int argc, char **argv) {
     switch(choosenOption)
     {
         case COMPRESS:
+            cout << YELLOW << "\nCompactando....\n";
             file = fopen(argv[2], "r");
             size = countCharactersOfFile(argv[2]);
             text = (unsigned char*)calloc(size + 2, sizeof(unsigned char));
@@ -53,7 +54,6 @@ int main (int argc, char **argv) {
             encodeText = dictionary.encode(dictionary_, text);
                
             // Gerar um arquivo compactado de fato
-            cout << YELLOW << "\nCompactando....\n";
             compress.compress(reinterpret_cast<unsigned char*>(encodeText), argv[3]);
             cout << CYAN << "\tTamanho do arquivo original: " << MAGENTA << getFileSize(argv[2])/1000 << "KB" << endl;
             cout << GREEN << "\t✓ " << CYAN << "Tamanho do arquivo compactado: " << GREEN << getFileSize(argv[3])/1000 << "KB" << endl;
