@@ -1,4 +1,5 @@
 #include "huffman.h"
+#include "exceptions.h"
 #include "frequenceTable.h"
 
 Huffman::Huffman() {
@@ -58,7 +59,7 @@ void Huffman::fillList(unsigned int *table) {
             }
 
             else
-                throw "Erro ao alocar memória de um nó para preencher a lista!";
+                throw erroAoAlocarMemoriaNaLista();
         }
     }
 }
@@ -111,7 +112,7 @@ No *Huffman::buildTree() {
         }
 
         else
-            throw "Não foi possível alocar memória para o novo nó ao construir a árvore! Função: buildTree()";
+            throw erroAoAlocarMemoriaNaArvore();
     }
     return begin;
 }

@@ -1,14 +1,9 @@
+#include "exceptions.h"
 #include "frequenceTable.h"
 #include "huffman.h"
 #include "dictionary.h"
 #include "compress.h"
 #include "entry.h"
-
-// Definição de cores que serão usadas no terminal      
-#define GREEN   "\033[32m"      
-#define YELLOW  "\033[33m" 
-#define MAGENTA "\033[35m"          
-#define CYAN    "\033[36m"
 
 int main (int argc, char **argv) {
     frequenceTable frequenceTable;
@@ -31,7 +26,7 @@ int main (int argc, char **argv) {
             text = (unsigned char*)calloc(size + 2, sizeof(unsigned char));
 
             if(file == nullptr)
-                cout << "Não foi possível abrir o arquivo na função main durante a compactação!\n";
+                throw falhaAoAbrirArquivoDeEntrada();
             
             readFile(argv[2], text);
             writeEntryOnAuxFile("arquivoAuxiliar.txt", text);
@@ -79,7 +74,7 @@ int main (int argc, char **argv) {
             text = (unsigned char*)calloc((size + 2), sizeof(unsigned char));
 
             if(file == nullptr)
-                cout << "Não foi possível abrir o arquivo na função main durante a compactação!\n";
+                throw falhaAoAbrirArquivoAuxiliar();
             
             readFile("arquivoAuxiliar.txt", text);
             

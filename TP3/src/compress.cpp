@@ -1,4 +1,5 @@
 #include "compress.h"
+#include "exceptions.h"
 #include <cstdio>
 
 Compress::Compress() {}
@@ -12,7 +13,7 @@ void Compress::compress(unsigned char *str, char *filename) {
     int j = 7;
 
     if(file == nullptr)
-        throw "Erro ao criar o arquivo para compactar! Método: compress() da classe Compress.";
+        throw arquivoNaoEncontradoNaCompressao();
 
     for(int i = 0; str[i] != '\0'; i++)
     {
@@ -50,7 +51,7 @@ void Compress::decompress(No *root, char *compactedFilename, char *outputFilenam
     No *aux = root;
 
     if(file == nullptr)
-        throw "Não foi possível abrir o arquivo na descompactação! Método: decompress() da classe Compress.";
+        throw arquivoNaoEncontradoNaCompressao();
 
     while(fread(&byte, sizeof(byte), 1, file))
     {
